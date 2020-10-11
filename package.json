@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My pofolio",
+  "main": "index.html",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dom119/portfolio.git"
+  },
+  "author": "Dom Le",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dom119/portfolio/issues"
+  },
+  "homepage": "https://github.com/Dom119/portfolio#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
