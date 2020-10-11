@@ -4,7 +4,7 @@
   "description": "My pofolio",
   "main": "index.html",
   "scripts": {
-    "test": ""
+    "sass": "node-sass --recursive --watch sass/style.scss -o css/style.css"
   },
   "repository": {
     "type": "git",
