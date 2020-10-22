@@ -1,4 +1,469 @@
+// universial
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  //font-family: "Roboto", sans-serif;
+}
+
+//utilities--------------------------------------------------------------------------------------------
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  display: inline-block;
   color: white;
-  background: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+a:hover {
+  color: yellow;
+}
+.nav-item {
+  margin: 0 10px;
+  padding: 15px 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+h3 {
+  letter-spacing: 1px;
+  font-size: 2rem;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.font-yellow {
+  color: yellow;
+}
+
+.line {
+  padding: 1px 150px;
+  background: yellow;
+}
+
+.bg-black {
+  background: black;
+}
+
+//details
+
+//navbar
+.navbar {
+  z-index: 2;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  //line at the bottom
+  border-bottom: 0.3px solid #ccc;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-100px);
+
+  .container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .icon img {
+      width: 100px;
+      margin: 10px 0;
+    }
+    .navigation ul,
+    .icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    a {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+    .icon a {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      margin-left: -25px;
+    }
+  }
+}
+
+// header -- the whole cover page
+.header {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(ellipse at bottom, #345980 0%, #090a0f 100%);
+  font-family: "Raleway", sans-serif; //384c62
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  .container {
+    height: 100%;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+    animation: initialLoading 2s forwards ease-in;
+  }
+
+  .main-button {
+    color: #ccc;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(black, 0.3);
+    background: #345980;
+    outline: none;
+    animation: initialLoading 3s forwards ease-in;
+  }
+
+  .main-button:hover {
+    transform: scale(0.95);
+  }
+
+  @keyframes initialLoading {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+//section My projects
+.all-projects {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+  .projects {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 3px;
+    .project {
+      background: red;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-content: center;
+      cursor: pointer;
+      img {
+        width: 100%;
+      }
+      .description {
+        background: rgb(61, 61, 61);
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        p {
+          font-size: 0.7rem;
+          padding-bottom: 15px;
+        }
+        h4 {
+          text-transform: uppercase;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+//About Me section
+.about-me {
+  background: rgba($color: #000000, $alpha: 1);
+  color: #ccc;
+  padding-bottom: 70px;
+  .biography {
+    padding-top: 20px;
+    p {
+      padding: 10px;
+      line-height: 1.5rem;
+      text-align: justify;
+    }
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    .skill-element {
+      margin: 10px;
+      display: grid;
+      grid-template-columns: 3fr 10fr;
+      grid-gap: 20px;
+      h4 {
+        color: white;
+      }
+      .measurement {
+        background: #ccc;
+        border-radius: 10px;
+        .measurement-filler {
+          height: 100%;
+          background: yellow;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          transition: all 5s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+// //html css scss
+// .skill-element:nth-child(1) .measurement-filler {
+//   border-radius: 10px;
+// }
+
+// //bootstrap
+// .skill-element:nth-child(2) .measurement-filler {
+//   width: 85%;
+// }
+
+// //javascript / web apis
+// .skill-element:nth-child(3) .measurement-filler {
+//   width: 90%;
+// }
+
+// //React / Redux
+// .skill-element:nth-child(4) .measurement-filler {
+//   width: 75%;
+// }
+
+// //Nodejs / express
+// .skill-element:nth-child(5) .measurement-filler {
+//   width: 70%;
+// }
+
+// //mongoDB
+// .skill-element:nth-child(6) .measurement-filler {
+//   width: 80%;
+// }
+
+// //python /Django
+// .skill-element:nth-child(7) .measurement-filler {
+//   width: 70%;
+// }
+
+// //MySQL
+// .skill-element:nth-child(8) .measurement-filler {
+//   width: 90%;
+// }
+
+// //photoshop / illustrator
+// .skill-element:nth-child(9) .measurement-filler {
+//   width: 78%;
+// }
+//contact
+.contact-header {
+  margin: 0;
+  padding: 40px 0;
+  background: whitesmoke;
+  h3 {
+    color: black;
+  }
+}
+
+.contact-body {
+  margin: 0;
+  margin-bottom: 40px;
+  background: #ccc;
+  display: flex;
+  justify-items: center;
+  .container-contact-body {
+    font-size: 1.5rem;
+    margin: 40px auto;
+    padding: 20px 200px;
+    background: whitesmoke;
+    display: flex;
+    justify-items: center;
+    align-self: center;
+    box-shadow: 5px 10px 10px rgba($color: #000000, $alpha: 0.5);
+  }
+}
+
+//------------------------------------------
+.footer {
+  background: black;
+  color: white;
+  .container {
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    p {
+      font-size: 1rem;
+      margin: 20px auto;
+      padding: auto;
+    }
+  }
+}
+
+// a sky full of star--------------------------------
+$stars: 100;
+$w: 100vw;
+
+.sky {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+//big ones
+@for $i from 0 through 100 {
+  .star:nth-child(#{$i}) {
+    // $d: random(5);
+    // width: $d + px;
+    // height: $d + px;
+    width: 3px;
+    height: 3px;
+    z-index: 10;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 1;
+    margin-left: random(100) + px;
+    margin-top: random(100) + px;
+    animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+    // animation: animStar 2s linear infinite, twinkle-#{$i} 1s linear infinite;
+    //animation: twinkle-#{$i} 1s linear infinite;
+    animation-delay: $i * 0.01s;
+  }
+  @keyframes twinkle {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.3;
+    }
+  }
+  @keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-50px);
+    }
+  }
+}
+
+//medium ones
+@for $i from 101 through 200 {
+  .star:nth-child(#{$i}) {
+    width: 2px;
+    height: 2px;
+    z-index: 10;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 1;
+    margin-left: random(100) + px;
+    margin-top: random(100) + px;
+    animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+    // animation: animStar 2s linear infinite, twinkle-#{$i} 1s linear infinite;
+    //animation: twinkle-#{$i} 1s linear infinite;
+    animation-delay: $i * 0.01s;
+  }
+  @keyframes twinkle {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.3;
+    }
+  }
+  @keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-50px);
+    }
+  }
+}
+
+//small ones
+@for $i from 201 through 300 {
+  .star:nth-child(#{$i}) {
+    width: 1px;
+    height: 1px;
+    z-index: 10;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 1;
+    margin-left: random(100) + px;
+    margin-top: random(100) + px;
+    animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+    // animation: animStar 2s linear infinite, twinkle-#{$i} 1s linear infinite;
+    //animation: twinkle-#{$i} 1s linear infinite;
+    animation-delay: $i * 0.01s;
+  }
+  @keyframes twinkle {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.3;
+    }
+  }
+  @keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-50px);
+    }
+  }
 }

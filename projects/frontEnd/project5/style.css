@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  background-color: #2d2013;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 500px;
+}
+
+.container {
+  margin: 0px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+input,
+button {
+  border: 1px solid #dedede;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-size: 14px;
+  padding: 8px;
+  margin: 0px;
+}
+
+input[type="text"] {
+  width: 300px;
+}
+
+.search-btn {
+  cursor: pointer;
+  border-left: 0;
+  border-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.random-btn {
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+#result-heading {
+  font-size: 20px;
+  padding: 20px;
+}
+
+#meals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 10px;
+}
+
+.each-meal {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.each-meal .meal-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-in;
+}
+
+.each-meal:hover .meal-info {
+  display: flex;
+}
+
+#meals img {
+  width: 200px;
+  border: 3px solid white;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 3px dashed;
+  padding: 20px;
+  margin: 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#single-meal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#single-meal li {
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  padding: 2px 4px;
+  margin: 3px;
+  background-color: #fff;
+  color: black;
+  list-style-type: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+}
+@media (max-width: 700px) {
+}
+@media (max-width: 500px) {
+  input[type="text"] {
+    width: 100%;
+  }
+}

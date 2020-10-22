@@ -1,0 +1,7773 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer; }
+
+a:hover {
+  color: yellow; }
+
+.nav-item {
+  margin: 0 10px;
+  padding: 15px 20px; }
+
+li {
+  list-style-type: none; }
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px; }
+
+h3 {
+  letter-spacing: 1px;
+  font-size: 2rem;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: white; }
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 15px; }
+
+.font-yellow {
+  color: yellow; }
+
+.line {
+  padding: 1px 150px;
+  background: yellow; }
+
+.bg-black {
+  background: black; }
+
+.navbar {
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  border-bottom: 0.3px solid #ccc;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-100px); }
+  .navbar .container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .navbar .container .icon img {
+      width: 100px;
+      margin: 10px 0; }
+    .navbar .container .navigation ul,
+    .navbar .container .icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+    .navbar .container a {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 1rem; }
+    .navbar .container .icon a {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      margin-left: -25px; }
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(ellipse at bottom, #345980 0%, #090a0f 100%);
+  font-family: "Raleway", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; }
+  .header .container {
+    height: 100%;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+    animation: initialLoading 2s forwards ease-in; }
+  .header .main-button {
+    color: #ccc;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background: #345980;
+    outline: none;
+    animation: initialLoading 3s forwards ease-in; }
+  .header .main-button:hover {
+    transform: scale(0.95); }
+
+@keyframes initialLoading {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.all-projects {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center; }
+  .all-projects .projects {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 3px; }
+    .all-projects .projects .project {
+      background: red;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-content: center;
+      cursor: pointer; }
+      .all-projects .projects .project img {
+        width: 100%; }
+      .all-projects .projects .project .description {
+        background: #3d3d3d;
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        color: white;
+        align-items: center;
+        justify-content: center; }
+        .all-projects .projects .project .description p {
+          font-size: 0.7rem;
+          padding-bottom: 15px; }
+        .all-projects .projects .project .description h4 {
+          text-transform: uppercase;
+          font-size: 0.8rem; }
+
+.about-me {
+  background: black;
+  color: #ccc;
+  padding-bottom: 70px; }
+  .about-me .biography {
+    padding-top: 20px; }
+    .about-me .biography p {
+      padding: 10px;
+      line-height: 1.5rem;
+      text-align: justify; }
+  .about-me .skills {
+    display: flex;
+    flex-direction: column;
+    margin: 40px; }
+    .about-me .skills .skill-element {
+      margin: 10px;
+      display: grid;
+      grid-template-columns: 3fr 10fr;
+      grid-gap: 20px; }
+      .about-me .skills .skill-element h4 {
+        color: white; }
+      .about-me .skills .skill-element .measurement {
+        background: #ccc;
+        border-radius: 10px; }
+        .about-me .skills .skill-element .measurement .measurement-filler {
+          height: 100%;
+          background: yellow;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          transition: all 5s ease-in-out; }
+
+.contact-header {
+  margin: 0;
+  padding: 40px 0;
+  background: whitesmoke; }
+  .contact-header h3 {
+    color: black; }
+
+.contact-body {
+  margin: 0;
+  margin-bottom: 40px;
+  background: #ccc;
+  display: flex;
+  justify-items: center; }
+  .contact-body .container-contact-body {
+    font-size: 1.5rem;
+    margin: 40px auto;
+    padding: 20px 200px;
+    background: whitesmoke;
+    display: flex;
+    justify-items: center;
+    align-self: center;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5); }
+
+.footer {
+  background: black;
+  color: white; }
+  .footer .container {
+    height: 100%;
+    display: flex;
+    justify-items: center; }
+    .footer .container p {
+      font-size: 1rem;
+      margin: 20px auto;
+      padding: auto; }
+
+.sky {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.star:nth-child(0) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 89px;
+  margin-top: 51px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(1) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 31px;
+  margin-top: 46px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.01s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(2) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 13px;
+  margin-top: 30px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.02s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(3) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 68px;
+  margin-top: 42px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.03s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(4) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 10px;
+  margin-top: 30px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.04s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(5) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 7px;
+  margin-top: 42px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.05s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(6) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 96px;
+  margin-top: 43px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.06s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(7) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 48px;
+  margin-top: 51px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.07s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(8) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 39px;
+  margin-top: 48px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.08s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(9) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 70px;
+  margin-top: 51px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.09s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(10) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 6px;
+  margin-top: 63px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.1s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(11) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 82px;
+  margin-top: 36px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.11s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(12) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 54px;
+  margin-top: 80px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.12s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(13) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 42px;
+  margin-top: 20px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.13s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(14) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 64px;
+  margin-top: 39px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.14s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(15) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 19px;
+  margin-top: 54px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.15s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(16) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 68px;
+  margin-top: 97px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.16s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(17) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 43px;
+  margin-top: 69px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.17s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(18) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 18px;
+  margin-top: 17px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.18s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(19) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 66px;
+  margin-top: 75px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.19s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(20) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 69px;
+  margin-top: 38px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.2s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(21) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 67px;
+  margin-top: 13px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.21s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(22) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 53px;
+  margin-top: 88px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.22s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(23) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 17px;
+  margin-top: 29px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.23s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(24) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 6px;
+  margin-top: 5px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.24s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(25) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 100px;
+  margin-top: 71px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.25s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(26) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 66px;
+  margin-top: 99px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.26s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(27) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 39px;
+  margin-top: 17px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.27s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(28) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 49px;
+  margin-top: 41px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.28s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(29) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 68px;
+  margin-top: 97px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.29s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(30) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 45px;
+  margin-top: 32px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.3s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(31) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 8px;
+  margin-top: 58px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.31s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(32) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 74px;
+  margin-top: 99px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.32s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(33) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 92px;
+  margin-top: 35px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.33s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(34) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 55px;
+  margin-top: 73px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.34s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(35) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 44px;
+  margin-top: 39px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.35s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(36) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 34px;
+  margin-top: 65px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.36s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(37) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 62px;
+  margin-top: 30px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.37s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(38) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 37px;
+  margin-top: 77px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.38s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(39) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 51px;
+  margin-top: 22px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.39s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(40) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 2px;
+  margin-top: 73px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.4s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(41) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 74px;
+  margin-top: 4px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.41s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(42) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 66px;
+  margin-top: 55px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.42s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(43) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 28px;
+  margin-top: 90px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.43s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(44) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 54px;
+  margin-top: 50px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.44s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(45) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 90px;
+  margin-top: 35px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.45s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(46) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 48px;
+  margin-top: 4px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.46s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(47) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 42px;
+  margin-top: 87px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.47s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(48) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 84px;
+  margin-top: 16px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.48s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(49) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 34px;
+  margin-top: 6px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.49s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(50) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 77px;
+  margin-top: 91px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.5s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(51) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 86px;
+  margin-top: 83px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.51s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(52) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 34px;
+  margin-top: 53px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.52s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(53) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 92px;
+  margin-top: 86px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.53s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(54) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 59px;
+  margin-top: 59px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.54s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(55) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 57px;
+  margin-top: 84px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.55s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(56) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 21px;
+  margin-top: 44px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.56s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(57) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 89px;
+  margin-top: 55px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.57s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(58) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 67px;
+  margin-top: 89px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.58s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(59) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 73px;
+  margin-top: 22px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.59s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(60) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 45px;
+  margin-top: 79px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.6s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(61) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 46px;
+  margin-top: 17px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.61s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(62) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 15px;
+  margin-top: 63px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.62s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(63) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 21px;
+  margin-top: 16px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.63s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(64) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 78px;
+  margin-top: 33px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.64s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(65) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 66px;
+  margin-top: 18px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.65s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(66) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 62px;
+  margin-top: 89px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.66s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(67) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 42px;
+  margin-top: 100px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.67s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(68) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 94px;
+  margin-top: 62px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.68s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(69) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 91px;
+  margin-top: 64px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.69s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(70) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 89px;
+  margin-top: 71px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.7s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(71) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 96px;
+  margin-top: 66px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.71s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(72) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 64px;
+  margin-top: 53px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.72s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(73) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 92px;
+  margin-top: 26px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.73s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(74) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 28px;
+  margin-top: 26px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.74s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(75) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 42px;
+  margin-top: 84px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.75s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(76) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 58px;
+  margin-top: 62px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.76s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(77) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 62px;
+  margin-top: 67px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.77s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(78) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 51px;
+  margin-top: 26px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.78s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(79) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 34px;
+  margin-top: 24px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.79s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(80) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 3px;
+  margin-top: 19px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.8s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(81) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 36px;
+  margin-top: 42px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.81s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(82) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 97px;
+  margin-top: 10px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.82s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(83) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 32px;
+  margin-top: 41px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.83s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(84) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 68px;
+  margin-top: 67px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.84s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(85) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 93px;
+  margin-top: 53px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.85s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(86) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 39px;
+  margin-top: 20px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.86s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(87) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 79px;
+  margin-top: 44px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.87s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(88) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 10px;
+  margin-top: 94px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.88s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(89) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 53px;
+  margin-top: 63px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.89s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(90) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 47px;
+  margin-top: 7px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.9s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(91) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 11px;
+  margin-top: 66px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.91s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(92) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 65px;
+  margin-top: 76px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.92s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(93) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 27px;
+  margin-top: 8px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.93s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(94) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 22px;
+  margin-top: 56px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.94s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(95) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 45px;
+  margin-top: 35px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.95s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(96) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 59px;
+  margin-top: 83px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.96s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(97) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 38px;
+  margin-top: 74px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.97s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(98) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 38px;
+  margin-top: 48px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.98s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(99) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 31px;
+  margin-top: 12px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 0.99s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(100) {
+  width: 3px;
+  height: 3px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 28px;
+  margin-top: 94px;
+  animation: animStar 5s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(101) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 59px;
+  margin-top: 59px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.01s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(102) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 83px;
+  margin-top: 21px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.02s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(103) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 69px;
+  margin-top: 50px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.03s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(104) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 19px;
+  margin-top: 46px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.04s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(105) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 41px;
+  margin-top: 19px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.05s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(106) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 72px;
+  margin-top: 20px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.06s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(107) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 79px;
+  margin-top: 56px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.07s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(108) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 31px;
+  margin-top: 19px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.08s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(109) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 29px;
+  margin-top: 67px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.09s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(110) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 70px;
+  margin-top: 36px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.1s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(111) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 1px;
+  margin-top: 70px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.11s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(112) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 96px;
+  margin-top: 67px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.12s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(113) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 89px;
+  margin-top: 37px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.13s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(114) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 78px;
+  margin-top: 71px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.14s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(115) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 6px;
+  margin-top: 51px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.15s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(116) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 37px;
+  margin-top: 40px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.16s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(117) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 83px;
+  margin-top: 59px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.17s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(118) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 63px;
+  margin-top: 29px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.18s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(119) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 85px;
+  margin-top: 76px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.19s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(120) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 20px;
+  margin-top: 71px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.2s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(121) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 56px;
+  margin-top: 96px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.21s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(122) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 87px;
+  margin-top: 26px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.22s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(123) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 93px;
+  margin-top: 80px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.23s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(124) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 70px;
+  margin-top: 39px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.24s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(125) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 59px;
+  margin-top: 74px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.25s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(126) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 82px;
+  margin-top: 21px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.26s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(127) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 9px;
+  margin-top: 13px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.27s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(128) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 90px;
+  margin-top: 32px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.28s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(129) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 79px;
+  margin-top: 59px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.29s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(130) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 75px;
+  margin-top: 48px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.3s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(131) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 88px;
+  margin-top: 97px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.31s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(132) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 36px;
+  margin-top: 41px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.32s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(133) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 67px;
+  margin-top: 81px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.33s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(134) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 60px;
+  margin-top: 23px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.34s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(135) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 96px;
+  margin-top: 28px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.35s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(136) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 94px;
+  margin-top: 26px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.36s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(137) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 77px;
+  margin-top: 77px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.37s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(138) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 34px;
+  margin-top: 44px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.38s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(139) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 11px;
+  margin-top: 22px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.39s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(140) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 27px;
+  margin-top: 58px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.4s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(141) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 5px;
+  margin-top: 35px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.41s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(142) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 83px;
+  margin-top: 59px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.42s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(143) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 43px;
+  margin-top: 75px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.43s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(144) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 67px;
+  margin-top: 7px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.44s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(145) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 66px;
+  margin-top: 53px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.45s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(146) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 32px;
+  margin-top: 19px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.46s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(147) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 7px;
+  margin-top: 13px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.47s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(148) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 65px;
+  margin-top: 61px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.48s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(149) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 50px;
+  margin-top: 93px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.49s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(150) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 11px;
+  margin-top: 25px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.5s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(151) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 54px;
+  margin-top: 32px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.51s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(152) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 18px;
+  margin-top: 38px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.52s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(153) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 99px;
+  margin-top: 22px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.53s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(154) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 58px;
+  margin-top: 36px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.54s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(155) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 72px;
+  margin-top: 32px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.55s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(156) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 88px;
+  margin-top: 50px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.56s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(157) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 39px;
+  margin-top: 64px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.57s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(158) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 84px;
+  margin-top: 21px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.58s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(159) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 50px;
+  margin-top: 4px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.59s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(160) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 91px;
+  margin-top: 80px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.6s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(161) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 98px;
+  margin-top: 70px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.61s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(162) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 98px;
+  margin-top: 59px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.62s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(163) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 82px;
+  margin-top: 88px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.63s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(164) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 43px;
+  margin-top: 16px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.64s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(165) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 23px;
+  margin-top: 94px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.65s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(166) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 77px;
+  margin-top: 25px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.66s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(167) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 69px;
+  margin-top: 62px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.67s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(168) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 83px;
+  margin-top: 10px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.68s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(169) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 67px;
+  margin-top: 58px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.69s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(170) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 52px;
+  margin-top: 79px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.7s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(171) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 8px;
+  margin-top: 87px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.71s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(172) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 99px;
+  margin-top: 35px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.72s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(173) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 64px;
+  margin-top: 2px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.73s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(174) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 50px;
+  margin-top: 87px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.74s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(175) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 18px;
+  margin-top: 79px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.75s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(176) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 66px;
+  margin-top: 93px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.76s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(177) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 25px;
+  margin-top: 17px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.77s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(178) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 62px;
+  margin-top: 38px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.78s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(179) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 87px;
+  margin-top: 65px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.79s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(180) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 53px;
+  margin-top: 37px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.8s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(181) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 5px;
+  margin-top: 91px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.81s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(182) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 56px;
+  margin-top: 64px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.82s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(183) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 71px;
+  margin-top: 71px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.83s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(184) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 11px;
+  margin-top: 45px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.84s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(185) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 7px;
+  margin-top: 62px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.85s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(186) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 20px;
+  margin-top: 11px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.86s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(187) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 34px;
+  margin-top: 81px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.87s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(188) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 56px;
+  margin-top: 44px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.88s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(189) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 36px;
+  margin-top: 66px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.89s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(190) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 61px;
+  margin-top: 70px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.9s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(191) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 35px;
+  margin-top: 4px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.91s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(192) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 27px;
+  margin-top: 26px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.92s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(193) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 29px;
+  margin-top: 49px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.93s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(194) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 22px;
+  margin-top: 84px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.94s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(195) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 63px;
+  margin-top: 10px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.95s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(196) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 26px;
+  margin-top: 4px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.96s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(197) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 70px;
+  margin-top: 85px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.97s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(198) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 98px;
+  margin-top: 66px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.98s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(199) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 20px;
+  margin-top: 53px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 1.99s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(200) {
+  width: 2px;
+  height: 2px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 99px;
+  margin-top: 80px;
+  animation: animStar 4s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(201) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 86px;
+  margin-top: 6px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.01s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(202) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 90px;
+  margin-top: 20px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.02s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(203) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 24px;
+  margin-top: 98px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.03s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(204) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 97px;
+  margin-top: 18px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.04s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(205) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 40px;
+  margin-top: 9px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.05s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(206) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 87px;
+  margin-top: 65px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.06s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(207) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 45px;
+  margin-top: 87px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.07s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(208) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 31px;
+  margin-top: 74px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.08s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(209) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 6px;
+  margin-top: 88px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.09s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(210) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 83px;
+  margin-top: 92px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.1s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(211) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 25px;
+  margin-top: 83px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.11s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(212) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 60px;
+  margin-top: 22px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.12s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(213) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 22px;
+  margin-top: 72px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.13s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(214) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 89px;
+  margin-top: 89px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.14s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(215) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 31px;
+  margin-top: 100px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.15s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(216) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 90px;
+  margin-top: 45px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.16s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(217) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 26px;
+  margin-top: 72px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.17s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(218) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 7px;
+  margin-top: 13px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.18s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(219) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 60px;
+  margin-top: 50px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.19s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(220) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 14px;
+  margin-top: 52px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.2s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(221) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 25px;
+  margin-top: 92px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.21s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(222) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 48px;
+  margin-top: 15px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.22s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(223) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 66px;
+  margin-top: 21px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.23s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(224) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 22px;
+  margin-top: 79px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.24s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(225) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 49px;
+  margin-top: 90px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.25s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(226) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 34px;
+  margin-top: 69px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.26s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(227) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 92px;
+  margin-top: 68px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.27s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(228) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 30px;
+  margin-top: 60px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.28s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(229) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 51px;
+  margin-top: 96px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.29s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(230) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 49px;
+  margin-top: 15px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.3s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(231) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 71px;
+  margin-top: 48px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.31s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(232) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 1px;
+  margin-top: 67px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.32s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(233) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 65px;
+  margin-top: 57px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.33s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(234) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 4px;
+  margin-top: 83px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.34s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(235) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 13px;
+  margin-top: 7px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.35s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(236) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 81px;
+  margin-top: 49px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.36s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(237) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 32px;
+  margin-top: 51px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.37s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(238) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 23px;
+  margin-top: 63px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.38s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(239) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 14px;
+  margin-top: 10px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.39s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(240) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 55px;
+  margin-top: 72px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.4s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(241) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 91px;
+  margin-top: 78px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.41s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(242) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 7px;
+  margin-top: 23px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.42s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(243) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 70px;
+  margin-top: 47px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.43s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(244) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 43px;
+  margin-top: 52px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.44s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(245) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 11px;
+  margin-top: 17px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.45s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(246) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 98px;
+  margin-top: 3px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.46s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(247) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 3px;
+  margin-top: 33px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.47s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(248) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 26px;
+  margin-top: 12px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.48s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(249) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 3px;
+  margin-top: 10px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.49s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(250) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 38px;
+  margin-top: 2px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.5s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(251) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 95px;
+  margin-top: 85px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.51s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(252) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 88px;
+  margin-top: 1px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.52s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(253) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 12px;
+  margin-top: 43px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.53s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(254) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 2px;
+  margin-top: 9px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.54s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(255) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 84px;
+  margin-top: 81px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.55s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(256) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 82px;
+  margin-top: 70px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.56s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(257) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 80px;
+  margin-top: 36px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.57s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(258) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 74px;
+  margin-top: 30px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.58s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(259) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 26px;
+  margin-top: 43px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.59s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(260) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 83px;
+  margin-top: 81px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.6s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(261) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 86px;
+  margin-top: 20px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.61s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(262) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 69px;
+  margin-top: 25px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.62s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(263) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 21px;
+  margin-top: 41px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.63s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(264) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 93px;
+  margin-top: 26px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.64s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(265) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 76px;
+  margin-top: 68px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.65s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(266) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 4px;
+  margin-top: 1px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.66s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(267) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 72px;
+  margin-top: 23px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.67s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(268) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 32px;
+  margin-top: 65px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.68s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(269) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 75px;
+  margin-top: 45px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.69s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(270) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 54px;
+  margin-top: 80px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.7s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(271) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 18px;
+  margin-top: 92px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.71s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(272) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 25px;
+  margin-top: 59px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.72s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(273) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 31px;
+  margin-top: 40px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.73s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(274) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 14px;
+  margin-top: 9px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.74s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(275) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 78px;
+  margin-top: 3px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.75s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(276) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 52px;
+  margin-top: 60px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.76s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(277) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 94px;
+  margin-top: 6px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.77s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(278) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 55px;
+  margin-top: 50px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.78s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(279) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 38px;
+  margin-top: 61px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.79s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(280) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 86px;
+  margin-top: 64px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.8s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(281) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 25px;
+  margin-top: 85px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.81s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(282) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 29px;
+  margin-top: 97px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.82s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(283) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 82px;
+  margin-top: 94px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.83s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(284) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 79px;
+  margin-top: 6px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.84s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(285) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 25px;
+  margin-top: 45px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.85s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(286) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 81px;
+  margin-top: 91px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.86s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(287) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 3px;
+  margin-top: 100px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.87s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(288) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 32px;
+  margin-top: 66px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.88s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(289) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 26px;
+  margin-top: 80px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.89s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(290) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 71px;
+  margin-top: 3px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.9s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(291) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 44px;
+  margin-top: 80px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.91s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(292) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 11px;
+  margin-top: 38px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.92s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(293) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 91px;
+  margin-top: 59px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.93s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(294) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 45px;
+  margin-top: 37px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.94s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(295) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 22px;
+  margin-top: 39px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.95s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(296) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 70px;
+  margin-top: 64px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.96s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(297) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 67px;
+  margin-top: 43px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.97s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(298) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 77px;
+  margin-top: 46px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.98s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(299) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 66px;
+  margin-top: 51px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 2.99s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }
+
+.star:nth-child(300) {
+  width: 1px;
+  height: 1px;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 1;
+  margin-left: 34px;
+  margin-top: 68px;
+  animation: animStar 2s linear infinite, twinkle 1s linear infinite;
+  animation-delay: 3s; }
+
+@keyframes twinkle {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-50px); } }

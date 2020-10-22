@@ -3,14 +3,225 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css/style.css" />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dom's Portfolio</title>
   </head>
-  <body>
-    <h1>Hello, this is my portfolio.</h1>
-    <h2>Testing</h2>
-    <h3>hello, another testing</h3>
-    <h4>Testing on another day</h4>
-    <script src="app.js"></script>
+
+  <body id="home">
+    <!-- nav / sticky mode -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="icon">
+          <img src="images/top-icon.png" />
+          <div class="nav-item">
+            <a href="#">Dom's Portfolio</a>
+          </div>
+        </div>
+        <div class="navigation">
+          <ul>
+            <li class="nav-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#all-projects">My Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- a sky full of star - done -->
+    <!-- header -->
+    <header class="header">
+      <!-- sky of stars -->
+      <section class="sky">
+        <!-- <div class="star"></div>  -->
+      </section>
+      <!-- finish sky of stars -->
+      <div class="container">
+        <!-- <h3>Welcome to my portfolio</h3> -->
+        <h1>Hello, My name is <span class="font-yellow">Dom.</span></h1>
+        <h1>
+          I am doing
+          <span class="font-yellow" id="career">Web / Web Application.</span>
+        </h1>
+        <button class="main-button">View My Work</button>
+      </div>
+      <!-- a sky full of star -->
+    </header>
+    <!-- my projects -->
+    <div class="all-projects" id="all-projects">
+      <h3>My Projects</h3>
+      <div class="line"></div>
+      <h3>Javascript / Web APIs</h3>
+      <section class="projects" id="front-end">
+        <!-- <a href="#" class="project" id="project1" target="_blank">
+          <div class="content">
+            <img
+              src="images/projects/backEnd/project1.png"
+              alt="project ${i + 1}"
+            />
+            <div class="description">
+              <p>Form Validation</p>
+              <h4>Regular expression</h4>
+            </div>
+          </div>
+          <div class="overlay">
+            <div class="source-code">
+              <div class="icon">AAA</div>
+              <p>Source Code</p>
+            </div>
+            <div class="demo">
+              <div class="icon">
+                BBB
+                <p>Demo</p>
+              </div>
+            </div>
+          </div>
+        </a> -->
+      </section>
+      <h3>Back End</h3>
+      <section class="projects" id="back-end"></section>
+    </div>
+
+    <!-- about me -->
+    <section class="about-me" id="about-me">
+      <div class="container">
+        <h3>About Me</h3>
+        <div class="line"></div>
+        <div class="biography">
+          <p>Hi!</p>
+          <p>
+            My name is Dom Quy Dung Le. I am living in Melbourne / Australia and
+            I am doing Web / Web Application.
+          </p>
+          <p>
+            I started my coding journey not too long ago. About Oct 2019, I got
+            my first exposure to the coding world through a series of Computer
+            Science lectures on FreeCodeCamp, and since then, it has been a
+            crazy amount of time sitting in front of my computer every night and
+            every weekend.
+          </p>
+          <p>
+            I got my special interest in designing Web Application, building
+            APIs and micro services. At the time being, I am following the MERN
+            stack, so React and Nodejs are my favorite.But I also gradually
+            expand my knowledge to other technologies.
+          </p>
+          <p>
+            I am actively searching for a job position now. If you are
+            interested in what I've done and think I would fit into your
+            project, or just simply say Hi, please email me at
+            quydung119@gmail.com
+          </p>
+          <p>Thanks for your time. Appreciate that.</p>
+          <p>Cheers,</p>
+        </div>
+        <h3>My Skill Set</h3>
+        <div class="line"></div>
+        <div class="skills">
+          <div class="skill-element">
+            <h4>HTML/CSS/SCSS</h4>
+            <div class="measurement">
+              <div class="measurement-filler"></div>
+            </div>
+          </div>
+          <div class="skill-element">
+            <h4>Bootstrap</h4>
+            <div class="measurement">
+              <div class="measurement-filler"></div>
+            </div>
+          </div>
+          <div class="skill-element">
+            <h4>Javascript / Web APIs</h4>
+            <div class="measurement">
+              <div class="measurement-filler"></div>
+            </div>
+          </div>
+          <div class="skill-element">
+            <h4>React / Redux</h4>
+            <div class="measurement">
+              <div class="measurement-filler"></div>
+            </div>
+          </div>
+          <div class="skill-element">
+            <h4>NodeJs / Express</h4>
+            <div class="measurement">
+              <div class="measurement-filler"></div>
+            </div>
+          </div>
+          <div class="skill-element">
+            <h4>MongoDB</h4>
+            <div class="measurement">
+              <div class="measurement-filler"></div>
+            </div>
+          </div>
+          <div class="skill-element">
+            <h4>Python / Django</h4>
+            <div class="measurement">
+              <div class="measurement-filler"></div>
+            </div>
+          </div>
+          <div class="skill-element">
+            <h4>MySQL</h4>
+            <div class="measurement">
+              <div class="measurement-filler"></div>
+            </div>
+          </div>
+          <div class="skill-element">
+            <h4>Photoshop / Illustrator</h4>
+            <div class="measurement">
+              <div class="measurement-filler"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact-header">
+      <div class="container">
+        <h3>Contact</h3>
+        <div class="line bg-black"></div>
+      </div>
+    </section>
+    <section class="contact-body">
+      <div class="container-contact-body">
+        <div class="form-body">quydung119@gmail.com</div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <p>© 2020 Dom Quy Dung Le. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- done, now is scripts of JS -->
+
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
