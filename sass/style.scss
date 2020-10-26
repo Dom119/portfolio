@@ -357,6 +357,9 @@ h1 {
       background: #333;
       outline: none;
     }
+    .formbtn:hover {
+      transform: scale(0.95);
+    }
     .email_received {
       color: green;
       display: none;
