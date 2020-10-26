@@ -25,6 +25,18 @@
       rel="stylesheet"
     />
 
+    <!-- Email JS file -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <!-- initialize Email Js -->
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_K3sGWHll0YNMpFDXzX5Va");
+      })();
+    </script>
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Dom's Portfolio</title>
   </head>
@@ -207,13 +219,38 @@
       <div class="container">
         <h3>Contact</h3>
         <div class="line bg-black"></div>
+        <div class="form">
+          <h3 id="email_received" class="email_received">
+            Thanks for your email. It has been received and I shall contact you
+            shortly.
+          </h3>
+
+          <label>Name</label>
+          <input id="name" type="text" />
+          <div class="warning" id="warning_id">Please fill up your name.</div>
+
+          <label>Email</label>
+          <input id="email" type="email" />
+          <div class="warning" id="warning_email">
+            Please fill up your email.
+          </div>
+
+          <label>Message</label>
+          <textarea id="message" name="message"></textarea>
+          <div class="warning" id="warning_message">
+            Please fill up your message.
+          </div>
+
+          <button id="formbtn" class="formbtn">Send</button>
+        </div>
       </div>
     </section>
-    <section class="contact-body">
+
+    <!-- <section class="contact-body">
       <div class="container">
         <div class="form-body">quydung119@gmail.com</div>
       </div>
-    </section>
+    </section> -->
 
     <!-- footer -->
     <footer class="footer" id="footer">
