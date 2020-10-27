@@ -39,7 +39,7 @@ export default function setUpEmails() {
       document.getElementById("warning_email").style.display = "block";
     }
 
-    if (name !== "" && email !== "" && message !== "") {
+    if (name !== "" && email !== "" && message !== "" && isEmailValid(email)) {
       var templateParams = {
         from_name: name,
         message: message,
