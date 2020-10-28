@@ -82,7 +82,9 @@
           I am doing
           <span class="font-yellow" id="career">Web / Web Application.</span>
         </h1>
-        <button class="main-button">View My Work</button>
+        <button class="main-button">
+          <a href="#projects">View My Work</a>
+        </button>
       </div>
     </header>
 
@@ -97,12 +99,12 @@
     </div> -->
 
     <!-- My projects -->
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="container">
         <h3>My Projects</h3>
         <div class="line"></div>
         <div class="projectNavigators">
-          <button id="web">Static Webs</button>
+          <button id="web" class="">Static Webs</button>
           <button id="javascript">Javascript</button>
           <button id="react">React</button>
           <button id="nodejs">NodeJs</button>
@@ -111,17 +113,26 @@
         </div>
         <div id="projectDisplay" class="projectDisplay">
           <!-- single project, focus on this -->
-          <!-- <a class="project">
+          <!-- <a href="projects/mealFinder" target="_blank" class="project">
             <div class="head">
               <div class="icon">
                 <div class="red"></div>
                 <div class="yellow"></div>
                 <div class="green"></div>
               </div>
-              <div class="projectTitle">Form Validation</div>
+              <div class="projectTitle">Meal Finder</div>
             </div>
             <div class="main">
-              <img src="../images/projects/frontEnd/project5.png" />
+              <img src="projects/mealFinder/photo.webp" />
+              <ul class="technologies">
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>web API</li>
+                <li>SCSS</li>
+                <li>Speach API</li>
+                <li>Javascript</li>
+                <li>...</li>
+              </ul>
             </div>
           </a> -->
         </div>
@@ -225,7 +236,8 @@
     <section class="contact-header">
       <div class="container">
         <h3>Contact</h3>
-        <div class="line bg-black"></div>
+
+        <div class="line bg-white"></div>
         <div class="form">
           <h3 id="email_received" class="email_received">
             Thanks for your email. It has been received and I shall contact you

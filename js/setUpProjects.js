@@ -26,24 +26,63 @@ export default function setUpProjects() {
         </div>
         <div class="main">
           <img src="projects/${projects[i].linkURL}/photo.webp" />
-        </div>
-      </a>
+          <ul class="technologies">
       `;
+      let keyWordList = "";
+      for (let j = 0; j < projects[i].keyword.length; j++) {
+        keyWordList += `<li>${projects[i].keyword[j]}</li>`;
+      }
+      content += keyWordList;
+      content += ` </ul>
+              <button class='learnMoreBtn' >Learn More</button>
+            </div>
+          </a>`;
     }
     projectDisplay.innerHTML = content;
   }
 
-  //--------Event Listener------------------
+  //--------Button Toggle------------------
+  function checkButton() {
+    if (buttonWeb.classList.contains("yellowBackground")) {
+      buttonWeb.classList.remove("yellowBackground");
+    }
+    if (buttonJavascript.classList.contains("yellowBackground")) {
+      buttonJavascript.classList.remove("yellowBackground");
+    }
+    if (buttonReact.classList.contains("yellowBackground")) {
+      buttonReact.classList.remove("yellowBackground");
+    }
+    if (buttonNodejs.classList.contains("yellowBackground")) {
+      buttonNodejs.classList.remove("yellowBackground");
+    }
+    if (buttonDjango.classList.contains("yellowBackground")) {
+      buttonDjango.classList.remove("yellowBackground");
+    }
+    if (buttonAll.classList.contains("yellowBackground")) {
+      buttonAll.classList.remove("yellowBackground");
+    }
+  }
+  //--------------Initialization
+  buttonWeb.classList.toggle("yellowBackground");
+  showProjects([a.countingDown, a.formValidation, a.memoryCard, a.seatBooking]);
+  //----------------------Even Listener---------------------------
   buttonWeb.addEventListener("click", () => {
+    checkButton();
+    buttonWeb.classList.toggle("yellowBackground");
     showProjects([
       a.countingDown,
       a.formValidation,
       a.memoryCard,
       a.seatBooking,
     ]);
+    // const projectsUI = document.querySelectorAll("project");
+    // console.log("project UI");
+    // console.log(projectsUI);
   });
 
   buttonJavascript.addEventListener("click", () => {
+    checkButton();
+    buttonJavascript.classList.toggle("yellowBackground");
     showProjects([
       a.breakingBall,
       a.mealFinder,
@@ -55,6 +94,8 @@ export default function setUpProjects() {
   });
 
   buttonReact.addEventListener("click", () => {
+    checkButton();
+    buttonReact.classList.toggle("yellowBackground");
     showProjects([
       a.SpeechToText,
       a.breakingBall,
@@ -63,6 +104,8 @@ export default function setUpProjects() {
     ]);
   });
   buttonNodejs.addEventListener("click", () => {
+    checkButton();
+    buttonNodejs.classList.toggle("yellowBackground");
     showProjects([
       a.exchangeRateCalculator,
       a.speedTyping,
@@ -71,6 +114,8 @@ export default function setUpProjects() {
     ]);
   });
   buttonDjango.addEventListener("click", () => {
+    checkButton();
+    buttonDjango.classList.toggle("yellowBackground");
     showProjects([
       a.musicPlayer,
       a.formValidation,
@@ -79,6 +124,8 @@ export default function setUpProjects() {
     ]);
   });
   buttonAll.addEventListener("click", () => {
+    checkButton();
+    buttonAll.classList.toggle("yellowBackground");
     showProjects([
       a.breakingBall,
       a.dragAndDropList,
@@ -87,4 +134,6 @@ export default function setUpProjects() {
       a.mealFinder,
     ]);
   });
+
+  //----------------------------
 }
