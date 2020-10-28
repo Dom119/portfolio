@@ -25,7 +25,7 @@ export default function setUpProjects() {
           <div class="projectTitle">${projects[i].projectName}</div>
         </div>
         <div class="main">
-          <img src="./projects/${projects[i].linkURL}/photo.png" />
+          <img src="projects/${projects[i].linkURL}/photo.png" />
         </div>
       </a>
       `;
