@@ -254,12 +254,14 @@ h1 {
         outline: none;
       }
       button:hover {
-        background: #333;
-        color: white;
+        background: rgba(255, 255, 0, 0.966);
+        color: black;
       }
     }
+    //the view of all project
     .projectDisplay {
       width: 1200px;
+      margin-top: 30px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 40px;
@@ -268,84 +270,80 @@ h1 {
       .project {
         //single project, focus one this
         // height: 100%;
-        outline: none;
-        border: none;
-        box-shadow: 10px 10px rgba($color: #333333, $alpha: 1);
-
-        .icon {
-          display: flex;
-          flex-direction: row;
-          position: absolute;
-          left: 5px;
-          top: 5px;
-          .red,
-          .yellow,
-          .green {
-            width: 20px;
-            height: 20px;
-            border-radius: 100px;
-            display: block;
-            margin-right: 5px;
+        // outline: none;
+        // border: none;
+        // box-shadow: 6px -5px 10px rgba($color: #333333, $alpha: 1);
+        position: relative;
+        .head {
+          background: #ccc;
+          color: black;
+          .icon {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            .red,
+            .yellow,
+            .green {
+              width: 20px;
+              height: 20px;
+              border-radius: 100px;
+              display: block;
+              margin-right: 5px;
+            }
+            .red {
+              background: #ff605c;
+            }
+            .yellow {
+              background: #ffbd44;
+            }
+            .green {
+              background: #00ca4e;
+            }
           }
-          .red {
-            background: #ff605c;
+          .projectTitle {
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
           }
-          .yellow {
-            background: #ffbd44;
-          }
-          .green {
-            background: #00ca4e;
-          }
+          //done the title bar
         }
-        .projectTitle {
-          height: 30px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.1rem;
-        }
-        //done the title bar
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
-
-        // .element {
-        //   display: grid;
-        //   grid-template-columns: 1fr 1fr 1fr 1fr;
-        //   grid-row-gap: 20px;
-        //   grid-column-gap: 20px;
-        //   position: absolute;
-        //   top: 100px;
-        //   left: 50px;
-        //   .e {
-        //     padding: 10px 25px;
-        //     border: solid 1px #333;
-        //     display: none;
-        //     background: #ccc;
-        //     transition: all 5s ease-in-out;
-        //   }
-        // }
-      }
-      .project:hover {
-        // .element .e {
-        //   display: block;
-        // }
-        img {
-          content: url(../images/projects/frontEnd/project6.png);
-          transition: imageChange 5s ease-in-out;
+        .main {
+          position: relative;
+          height: auto;
+          padding: 0;
+          margin: 0;
+          img {
+            width: 100%;
+          }
         }
       }
-      @keyframes imageChange {
-        from {
-          transform: translateY(-500px);
-        }
-        to {
-          transform: translateY(0);
-        }
-      }
+
+      // .project:hover {
+      //   // .element .e {
+      //   //   display: block;
+      //   // }
+      //   img {
+      //     content: url(../images/projects/frontEnd/project6.png);
+      //     animation: imageChange 0.7s ease-in-out;
+      //   }
+      // }
+      // @keyframes imageChange {
+      //   from {
+      //     opacity: 0;
+      //     visibility: hidden;
+      //     transform: translateY(-10px);
+      //   }
+      //   to {
+      //     opacity: 1;
+      //     visibility: visible;
+      //     transform: translateY(0);
+      //   }
+      // }
     }
   }
 }
