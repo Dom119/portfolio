@@ -1,83 +1,115 @@
-const projectDatabase = [
-  {
+const projectDatabase = {
+  formValidation: {
     ID: 1,
     projectName: "Form Validation",
     linkURL: "formValidation",
+    keyword: ["Regular Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/formValidation/index.html",
   },
-  {
+  seatBooking: {
     ID: 2,
     projectName: "Seat Booking",
     linkURL: "seatBooking",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/seatBooking/index.html",
   },
-  {
+  exchangeRateCalculator: {
     ID: 3,
     projectName: "Exchange Rate Calculator",
     linkURL: "ExchangeRateCalculator",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/ExchangeRateCalculator/index.html",
   },
-  {
+  hangManGame: {
     ID: 4,
     projectName: "Hang Man Game",
     linkURL: "hangManGame",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/hangManGame/index.html",
   },
-  {
-    ID: 5,
+  mealFinder: {
+    ID: 5, //i=4
     projectName: "Meal Finder",
     linkURL: "mealFinder",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/mealFinder/index.html",
   },
-  {
+  expenseTracker: {
     ID: 6,
     projectName: "Expense Tracker",
     linkURL: "expenseTracker",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/expenseTracker/index.html",
   },
-  {
+  musicPlayer: {
     ID: 7,
     projectName: "Music Player",
     linkURL: "musicPlayer",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/musicPlayer/index.html",
   },
-  {
+  speedTyping: {
     ID: 8,
     projectName: "Speed Typing",
     linkURL: "speedTyping",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/speedTyping/index.html",
   },
-  {
+  SpeechToText: {
     ID: 9,
     projectName: "Speech To Text",
     linkURL: "SpeechToText",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/SpeechToText/index.html",
   },
-  {
+  memoryCard: {
     ID: 10,
     projectName: "Memory Card",
     linkURL: "memoryCard",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/memoryCard/index.html",
   },
-  {
+  lyricSearching: {
     ID: 11,
     projectName: "Lyric Searching",
     linkURL: "lyricSearching",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/lyricSearching/index.html",
   },
-  {
+  RelaxerApp: {
     ID: 12,
     projectName: "Relaxer App",
     linkURL: "RelaxerApp",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/RelaxerApp/index.html",
   },
-  {
+  breakingBall: {
     ID: 13,
     projectName: "Breaking Ball",
     linkURL: "breakingBall",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/breakingBall/index.html",
   },
-  {
+  countingDown: {
     ID: 14,
     projectName: "Counting Down",
     linkURL: "countingDown",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/countingDown/index.html",
   },
-  {
+  speechRecognition: {
     ID: 15,
     projectName: "Speech Recognition",
     linkURL: "speechRecognition",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/speechRecognition/index.html",
   },
-  {
+  dragAndDropList: {
     ID: 16,
     projectName: "Drag And Drop List",
     linkURL: "dragAndDropList",
+    keyword: ["Regula Expession", "HTML", "CSS"],
+    linkToProjectPage: "../projects/dragAndDropList/index.html",
   },
-];
+};
 export default projectDatabase;
