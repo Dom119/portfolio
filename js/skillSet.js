@@ -16,9 +16,7 @@ export default function skillSet() {
   } else {
     for (let i = 0; i < 9; i++) {
       filler[i].style.width = values[i];
-      if (i === 0) {
-        filler[i].style.borderRadius = "10px";
-      }
+      filler[i].style.borderRadius = "10px";
     }
   }
 }

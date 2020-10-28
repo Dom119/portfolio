@@ -4,11 +4,15 @@ import setUpProjectFrontEnd from "./projectFE.js";
 import setUpProjectBackEnd from "./projectBE.js";
 import setUpStars from "./setupstars.js";
 import setUpEmails from "./setUpEmail.js";
+import setUpProjects from "./setUpProjects.js";
 
 setUpStars();
-setUpProjectFrontEnd();
-setUpProjectBackEnd();
 setUpEmails();
+
+setUpProjects();
+
+// setUpProjectFrontEnd();
+// setUpProjectBackEnd();
 
 window.addEventListener("scroll", (event) => {
   checkNavbar();

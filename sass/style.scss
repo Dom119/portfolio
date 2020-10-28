@@ -10,6 +10,8 @@ body {
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
+  font-family: "Roboto", sans-serif;
+
   //font-family: "Roboto", sans-serif;
 }
 
@@ -182,47 +184,166 @@ h1 {
   }
 }
 //section My projects
-.all-projects {
-  background: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
+// this part is used with makeFrontEnd and makeBackEnd, which I no longer need
+// .all-projects {
+//   background: black;
+//   color: white;
+//   display: flex;
+//   flex-direction: column;
+//   justify-items: center;
+//   align-items: center;
 
-  .projects {
-    margin: 0;
-    margin-top: 20px;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 10px;
-    grid-column-gap: 3px;
-    .project {
-      background: red;
+//   .projects {
+//     margin: 0;
+//     margin-top: 20px;
+//     padding: 0;
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-row-gap: 10px;
+//     grid-column-gap: 3px;
+//     .project {
+//       background: red;
+//       display: flex;
+//       flex-direction: column;
+//       align-self: center;
+//       justify-content: center;
+//       cursor: pointer;
+//       img {
+//         width: 100%;
+//       }
+//       .description {
+//         background: rgb(61, 61, 61);
+//         display: flex;
+//         flex-direction: column;
+//         height: 80px;
+//         color: white;
+//         align-items: center;
+//         justify-content: center;
+//         p {
+//           font-size: 0.7rem;
+//           padding-bottom: 15px;
+//         }
+//         h4 {
+//           text-transform: uppercase;
+//           font-size: 0.8rem;
+//         }
+//       }
+//     }
+//   }
+// }
+
+//Projects
+.projects {
+  background: black;
+  padding: 100px 0px 0px 0px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .projectNavigators {
+      width: 800px;
+      margin: 30px;
       display: flex;
-      flex-direction: column;
-      align-self: center;
-      justify-content: center;
-      cursor: pointer;
-      img {
-        width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      button {
+        font-size: 1rem;
+        padding: 10px 25px;
+        border-radius: 2px;
+        border: none;
+        outline: none;
       }
-      .description {
-        background: rgb(61, 61, 61);
-        display: flex;
-        flex-direction: column;
-        height: 80px;
+      button:hover {
+        background: #333;
         color: white;
-        align-items: center;
-        justify-content: center;
-        p {
-          font-size: 0.7rem;
-          padding-bottom: 15px;
+      }
+    }
+    .projectDisplay {
+      width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 40px;
+      grid-row-gap: 40px;
+      position: relative;
+      .project {
+        //single project, focus one this
+        // height: 100%;
+        outline: none;
+        border: none;
+        box-shadow: 10px 10px rgba($color: #333333, $alpha: 1);
+
+        .icon {
+          display: flex;
+          flex-direction: row;
+          position: absolute;
+          left: 5px;
+          top: 5px;
+          .red,
+          .yellow,
+          .green {
+            width: 20px;
+            height: 20px;
+            border-radius: 100px;
+            display: block;
+            margin-right: 5px;
+          }
+          .red {
+            background: #ff605c;
+          }
+          .yellow {
+            background: #ffbd44;
+          }
+          .green {
+            background: #00ca4e;
+          }
         }
-        h4 {
-          text-transform: uppercase;
-          font-size: 0.8rem;
+        .projectTitle {
+          height: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.1rem;
+        }
+        //done the title bar
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        // .element {
+        //   display: grid;
+        //   grid-template-columns: 1fr 1fr 1fr 1fr;
+        //   grid-row-gap: 20px;
+        //   grid-column-gap: 20px;
+        //   position: absolute;
+        //   top: 100px;
+        //   left: 50px;
+        //   .e {
+        //     padding: 10px 25px;
+        //     border: solid 1px #333;
+        //     display: none;
+        //     background: #ccc;
+        //     transition: all 5s ease-in-out;
+        //   }
+        // }
+      }
+      .project:hover {
+        // .element .e {
+        //   display: block;
+        // }
+        img {
+          content: url(../images/projects/frontEnd/project6.png);
+          transition: imageChange 5s ease-in-out;
+        }
+      }
+      @keyframes imageChange {
+        from {
+          transform: translateY(-500px);
+        }
+        to {
+          transform: translateY(0);
         }
       }
     }
