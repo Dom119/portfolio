@@ -15,7 +15,7 @@ export default function setUpProjects() {
     let content = "";
     for (let i = 0; i < projects.length; i++) {
       content += `
-      <a href='${projects[i].linkToProjectPage}' target='_blank' class="project">
+      <a href= 'projects/${projects[i].linkURL}/index.html' target='_blank' class="project">
         <div class="head">
           <div class="icon">
             <div class="red"></div>
