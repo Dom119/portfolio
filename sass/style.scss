@@ -20,18 +20,19 @@ body {
 
 //utilities--------------------------------------------------------------------------------------------
 .container {
+  width: 100vw;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-@media (max-width: 375px) {
-  .container {
-    width: 375px;
-  }
-  .header h1 {
-    font-size: 1.7rem;
-  }
-}
+// @media (max-width: 375px) {
+//   .container {
+//     width: 375px;
+//   }
+//   .header h1 {
+//     font-size: 1.7rem;
+//   }
+// }
 //-----------------------------------------------------------------------------------------------------
 a {
   display: inline-block;
@@ -190,72 +191,30 @@ h1 {
     }
   }
 }
-//section My projects
-// this part is used with makeFrontEnd and makeBackEnd, which I no longer need
-// .all-projects {
-//   background: black;
-//   color: white;
-//   display: flex;
-//   flex-direction: column;
-//   justify-items: center;
-//   align-items: center;
-
-//   .projects {
-//     margin: 0;
-//     margin-top: 20px;
-//     padding: 0;
-//     display: grid;
-//     grid-template-columns: repeat(3, 1fr);
-//     grid-row-gap: 10px;
-//     grid-column-gap: 3px;
-//     .project {
-//       background: red;
-//       display: flex;
-//       flex-direction: column;
-//       align-self: center;
-//       justify-content: center;
-//       cursor: pointer;
-//       img {
-//         width: 100%;
-//       }
-//       .description {
-//         background: rgb(61, 61, 61);
-//         display: flex;
-//         flex-direction: column;
-//         height: 80px;
-//         color: white;
-//         align-items: center;
-//         justify-content: center;
-//         p {
-//           font-size: 0.7rem;
-//           padding-bottom: 15px;
-//         }
-//         h4 {
-//           text-transform: uppercase;
-//           font-size: 0.8rem;
-//         }
-//       }
-//     }
-//   }
-// }
 
 //Projects
 .projects {
   background: black;
-  padding: 100px 0px 0px 0px;
+  padding: 100px 0px 40px 0px;
+  width: 100vw;
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     .projectNavigators {
-      width: 800px;
+      // width: 800px;
       margin: 30px;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
       button {
         font-size: 1rem;
-        padding: 10px 25px;
+        width: 120px;
+        padding: 10px;
+        margin: 10px 10px;
         border-radius: 2px;
         border: none;
         outline: none;
@@ -270,7 +229,7 @@ h1 {
     }
     //the view of all project
     .projectDisplay {
-      width: 1200px;
+      // width: 1200px;
       margin-top: 30px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -413,35 +372,13 @@ h1 {
           // transform: scale(1);
         }
       }
-
-      // .project:hover {
-      //   // .element .e {
-      //   //   display: block;
-      //   // }
-      //   img {
-      //     content: url(../images/projects/frontEnd/project6.png);
-      //     animation: imageChange 0.7s ease-in-out;
-      //   }
-      // }
-      // @keyframes imageChange {
-      //   from {
-      //     opacity: 0;
-      //     visibility: hidden;
-      //     transform: translateY(-10px);
-      //   }
-      //   to {
-      //     opacity: 1;
-      //     visibility: visible;
-      //     transform: translateY(0);
-      //   }
-      // }
     }
   }
 }
 
 //About Me section
 .about-me {
-  background: rgba($color: #000000, $alpha: 1);
+  background: rgba($color: #333, $alpha: 1);
   color: #ccc;
   padding-bottom: 70px;
   .biography {
@@ -452,18 +389,23 @@ h1 {
       text-align: justify;
     }
   }
+}
+.mySkills {
+  background: black;
   .skills {
+    background: black;
     display: flex;
     flex-direction: column;
     margin: 40px;
     .skill-element {
       margin: 10px;
       display: grid;
-      grid-template-columns: 3fr 10fr;
+      grid-template-columns: 4fr 8fr;
       grid-gap: 20px;
       h4 {
         color: white;
       }
+
       .measurement {
         background: #ccc;
         border-radius: 10px;
@@ -478,52 +420,6 @@ h1 {
     }
   }
 }
-
-// //html css scss
-// .skill-element:nth-child(1) .measurement-filler {
-//   border-radius: 10px;
-// }
-
-// //bootstrap
-// .skill-element:nth-child(2) .measurement-filler {
-//   width: 85%;
-// }
-
-// //javascript / web apis
-// .skill-element:nth-child(3) .measurement-filler {
-//   width: 90%;
-// }
-
-// //React / Redux
-// .skill-element:nth-child(4) .measurement-filler {
-//   width: 75%;
-// }
-
-// //Nodejs / express
-// .skill-element:nth-child(5) .measurement-filler {
-//   width: 70%;
-// }
-
-// //mongoDB
-// .skill-element:nth-child(6) .measurement-filler {
-//   width: 80%;
-// }
-
-// //python /Django
-// .skill-element:nth-child(7) .measurement-filler {
-//   width: 70%;
-// }
-
-// //MySQL
-// .skill-element:nth-child(8) .measurement-filler {
-//   width: 90%;
-// }
-
-// //photoshop / illustrator
-// .skill-element:nth-child(9) .measurement-filler {
-//   width: 78%;
-// }
-//contact
 
 .contact-header {
   margin: 0;
@@ -540,7 +436,7 @@ h1 {
   .form {
     display: flex;
     flex-direction: column;
-    width: 1000px;
+    // width: 1000px;
     margin: 30px 0px;
     label {
       font-family: "Roboto", sans-serif;
@@ -607,9 +503,30 @@ h1 {
     }
   }
 }
+//******************MEDIA QUERIES****************************************
+@media (max-width: 768px) {
+  .projects .container .projectDisplay {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .mySkills .skills .skill-element {
+    grid-template-columns: 2fr 8fr;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+  .mySkills .skills .skill-element {
+    grid-template-columns: 1fr 8fr;
+  }
+}
 
-// a sky full of star--------------------------------
-$stars: 100;
+//************************************************************************** // a sky full of star-------------------------------- $stars: 100;
 $w: 100vw;
 
 .sky {

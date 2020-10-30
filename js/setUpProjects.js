@@ -63,75 +63,86 @@ export default function setUpProjects() {
     }
   }
   //--------------Initialization
-  buttonWeb.classList.toggle("yellowBackground");
-  showProjects([a.countingDown, a.formValidation, a.memoryCard, a.seatBooking]);
+  buttonJavascript.classList.toggle("yellowBackground");
+  showProjects([
+    a.formValidation,
+    a.seatBooking,
+    a.exchangeRateCalculator,
+    a.hangManGame,
+    a.mealFinder,
+    a.expenseTracker,
+    a.musicPlayer,
+    a.speedTyping,
+    a.SpeechToText,
+    a.memoryCard,
+    a.lyricSearching,
+    a.breakingBall,
+    a.speechRecognition,
+    a.dragAndDropList,
+  ]);
   //----------------------Even Listener---------------------------
   buttonWeb.addEventListener("click", () => {
     checkButton();
     buttonWeb.classList.toggle("yellowBackground");
-    showProjects([
-      a.countingDown,
-      a.formValidation,
-      a.memoryCard,
-      a.seatBooking,
-    ]);
-    // const projectsUI = document.querySelectorAll("project");
-    // console.log("project UI");
-    // console.log(projectsUI);
+    showProjects([a.RelaxerApp, a.countingDown]);
   });
 
   buttonJavascript.addEventListener("click", () => {
     checkButton();
     buttonJavascript.classList.toggle("yellowBackground");
     showProjects([
-      a.breakingBall,
-      a.mealFinder,
-      a.SpeechToText,
-      a.seatBooking,
       a.formValidation,
+      a.seatBooking,
       a.exchangeRateCalculator,
+      a.hangManGame,
+      a.mealFinder,
+      a.expenseTracker,
+      a.musicPlayer,
+      a.speedTyping,
+      a.SpeechToText,
+      a.memoryCard,
+      a.lyricSearching,
+      a.breakingBall,
+      a.speechRecognition,
+      a.dragAndDropList,
     ]);
   });
 
   buttonReact.addEventListener("click", () => {
     checkButton();
     buttonReact.classList.toggle("yellowBackground");
-    showProjects([
-      a.SpeechToText,
-      a.breakingBall,
-      a.seatBooking,
-      a.speedTyping,
-    ]);
+    showProjects([]);
   });
   buttonNodejs.addEventListener("click", () => {
     checkButton();
     buttonNodejs.classList.toggle("yellowBackground");
-    showProjects([
-      a.exchangeRateCalculator,
-      a.speedTyping,
-      a.RelaxerApp,
-      a.hangManGame,
-    ]);
+    showProjects([]);
   });
   buttonDjango.addEventListener("click", () => {
     checkButton();
     buttonDjango.classList.toggle("yellowBackground");
-    showProjects([
-      a.musicPlayer,
-      a.formValidation,
-      a.exchangeRateCalculator,
-      a.countingDown,
-    ]);
+    showProjects([]);
   });
   buttonAll.addEventListener("click", () => {
     checkButton();
     buttonAll.classList.toggle("yellowBackground");
     showProjects([
+      a.formValidation,
+      a.seatBooking,
+      a.exchangeRateCalculator,
+      a.hangManGame,
+      a.mealFinder,
+      a.expenseTracker,
+      a.musicPlayer,
+      a.speedTyping,
+      a.SpeechToText,
+      a.memoryCard,
+      a.lyricSearching,
       a.breakingBall,
+      a.speechRecognition,
       a.dragAndDropList,
       a.countingDown,
       a.RelaxerApp,
-      a.mealFinder,
     ]);
   });
 
