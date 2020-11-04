@@ -14,7 +14,7 @@ const projectDatabase = {
   exchangeRateCalculator: {
     ID: 3,
     projectName: "Exchange Rate Calculator",
-    linkURL: "ExchangeRateCalculator",
+    linkURL: "exchangeRateCalculator",
     keyword: ["HTML", "CSS", "Javascript"],
   },
   hangManGame: {
@@ -50,7 +50,7 @@ const projectDatabase = {
   SpeechToText: {
     ID: 9,
     projectName: "Speech To Text",
-    linkURL: "SpeechToText",
+    linkURL: "speechToText",
     keyword: ["HTML", "CSS", "Javascript", "Speach API"],
   },
   memoryCard: {
@@ -68,7 +68,7 @@ const projectDatabase = {
   RelaxerApp: {
     ID: 12,
     projectName: "Relaxer App",
-    linkURL: "RelaxerApp",
+    linkURL: "relaxerApp",
     keyword: ["HTML", "CSS", "Animation"],
   },
   breakingBall: {
