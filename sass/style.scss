@@ -92,49 +92,49 @@ h1 {
 //details
 
 //navbar
-.navbar {
-  z-index: 2;
-  background-color: rgba($color: #000000, $alpha: 0.2);
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  //line at the bottom
-  border-bottom: 0.3px solid #ccc;
-  transition: all 0.3s ease-in-out;
-  transform: translateY(-100px);
+// .navbar {
+//   z-index: 2;
+//   background-color: rgba($color: #000000, $alpha: 0.2);
+//   position: fixed;
+//   top: 0px;
+//   right: 0px;
+//   left: 0px;
+//   //line at the bottom
+//   border-bottom: 0.3px solid #ccc;
+//   transition: all 0.3s ease-in-out;
+//   transform: translateY(-100px);
 
-  .container {
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    .icon img {
-      width: 100px;
-      margin: 10px 0;
-    }
-    .navigation ul,
-    .icon {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
-    a {
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      font-size: 1rem;
-    }
-    .icon a {
-      font-size: 1.3rem;
-      font-weight: bold;
-      margin: 0;
-      padding: 0;
-      margin-left: -25px;
-    }
-  }
-}
+//   .container {
+//     color: white;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//     .icon img {
+//       width: 100px;
+//       margin: 10px 0;
+//     }
+//     .navigation ul,
+//     .icon {
+//       display: flex;
+//       flex-direction: row;
+//       justify-content: center;
+//       align-items: center;
+//     }
+//     a {
+//       letter-spacing: 1px;
+//       text-transform: uppercase;
+//       font-size: 1rem;
+//     }
+//     .icon a {
+//       font-size: 1.3rem;
+//       font-weight: bold;
+//       margin: 0;
+//       padding: 0;
+//       margin-left: -25px;
+//     }
+//   }
+// }
 
 // header -- the whole cover page
 .header {
@@ -506,9 +506,12 @@ h1 {
   }
 }
 //******************MEDIA QUERIES****************************************
-@media (max-width: 900px) {
+@media (max-width: 786px) {
   .projects .container .projectDisplay {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .header .container h1 {
+    font-size: 2rem;
   }
 }
 @media (min-width: 768px) {

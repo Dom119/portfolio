@@ -27,7 +27,7 @@ const projectDatabase = {
     ID: 5, //i=4
     projectName: "Meal Finder",
     linkURL: "mealFinder",
-    keyword: ["HTML", "CSS", "Javascript", "Web API"],
+    keyword: ["HTML", "CSS", "Web API"],
   },
   expenseTracker: {
     ID: 6,
@@ -39,7 +39,7 @@ const projectDatabase = {
     ID: 7,
     projectName: "Music Player",
     linkURL: "musicPlayer",
-    keyword: ["HTML", "CSS", "Javascript", "Audio API"],
+    keyword: ["HTML", "CSS", "Audio API"],
   },
   speedTyping: {
     ID: 8,
@@ -51,7 +51,7 @@ const projectDatabase = {
     ID: 9,
     projectName: "Speech To Text",
     linkURL: "speechToText",
-    keyword: ["HTML", "CSS", "Javascript", "Speach API"],
+    keyword: ["HTML", "CSS", "Speach API"],
   },
   memoryCard: {
     ID: 10,
@@ -63,7 +63,7 @@ const projectDatabase = {
     ID: 11,
     projectName: "Lyric Searching",
     linkURL: "lyricSearching",
-    keyword: ["HTML", "CSS", "Javascript", "Web API"],
+    keyword: ["HTML", "CSS", "Web API"],
   },
   RelaxerApp: {
     ID: 12,
@@ -75,7 +75,7 @@ const projectDatabase = {
     ID: 13,
     projectName: "Breaking Ball",
     linkURL: "breakingBall",
-    keyword: ["HTML", "CSS", "Javascript", "Canvas API"],
+    keyword: ["HTML", "CSS", "Canvas API"],
   },
   countingDown: {
     ID: 14,
@@ -87,13 +87,13 @@ const projectDatabase = {
     ID: 15,
     projectName: "Speech Recognition",
     linkURL: "speechRecognition",
-    keyword: ["HTML", "CSS", "Javascript", "Speach API"],
+    keyword: ["HTML", "CSS", "Speach API"],
   },
   dragAndDropList: {
     ID: 16,
     projectName: "Drag And Drop List",
     linkURL: "dragAndDropList",
-    keyword: ["HTML", "CSS", "Javascript", "Drag And Drop API"],
+    keyword: ["HTML", "CSS", "Drag And Drop API"],
   },
 };
 export default projectDatabase;
