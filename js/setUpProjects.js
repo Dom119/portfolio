@@ -25,7 +25,7 @@ export default function setUpProjects() {
           <div class="projectTitle">${projects[i].projectName}</div>
         </div>
         <div class="main">
-          <img src="projects/${projects[i].linkURL}/photo.webp" />
+          <img src="projects/${projects[i].linkURL}/photo.png" />
           <ul class="technologies">
       `;
       let keyWordList = "";
