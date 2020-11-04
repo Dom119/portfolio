@@ -504,7 +504,7 @@ h1 {
   }
 }
 //******************MEDIA QUERIES****************************************
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .projects .container .projectDisplay {
     grid-template-columns: repeat(1, 1fr);
   }
