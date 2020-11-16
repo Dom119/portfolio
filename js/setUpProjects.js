@@ -111,7 +111,7 @@ export default function setUpProjects() {
   buttonReact.addEventListener("click", () => {
     checkButton();
     buttonReact.classList.toggle("yellowBackground");
-    showProjects([]);
+    showProjects([a.caroGame]);
   });
   buttonNodejs.addEventListener("click", () => {
     checkButton();

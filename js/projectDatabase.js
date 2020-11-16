@@ -95,5 +95,12 @@ const projectDatabase = {
     linkURL: "dragAndDropList",
     keyword: ["HTML", "CSS", "Drag And Drop API"],
   },
+  caroGame: {
+    ID: 17,
+    projectName: "Caro Game",
+    linkURL: "caroGame",
+    keyword: ["React"],
+  },
+  
 };
 export default projectDatabase;
