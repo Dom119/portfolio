@@ -2,14 +2,13 @@ import projectDatabase from "./projectDatabase.js";
 const a = projectDatabase;
 
 export default function setUpProjects() {
-  const buttonWeb = document.getElementById("web");
+  const buttonMERN = document.getElementById("MERN");
   const buttonJavascript = document.getElementById("javascript");
-  const buttonReact = document.getElementById("react");
-  const buttonNodejs = document.getElementById("nodejs");
-  const buttonDjango = document.getElementById("django");
-  const buttonAll = document.getElementById("all");
+  const buttonStatic = document.getElementById("static");
+ 
 
   //----------------------HTML part----------------
+  // it is mainly for Javascript button
   function showProjects(projects) {
     const projectDisplay = document.getElementById("projectDisplay");
     let content = "";
@@ -43,89 +42,39 @@ export default function setUpProjects() {
 
   //--------Button Toggle------------------
   function checkButton() {
-    if (buttonWeb.classList.contains("yellowBackground")) {
+    if (buttonStatic.classList.contains("yellowBackground")) {
       buttonWeb.classList.remove("yellowBackground");
     }
     if (buttonJavascript.classList.contains("yellowBackground")) {
       buttonJavascript.classList.remove("yellowBackground");
     }
-    if (buttonReact.classList.contains("yellowBackground")) {
+    if (buttonMERN.classList.contains("yellowBackground")) {
       buttonReact.classList.remove("yellowBackground");
     }
-    if (buttonNodejs.classList.contains("yellowBackground")) {
-      buttonNodejs.classList.remove("yellowBackground");
-    }
-    if (buttonDjango.classList.contains("yellowBackground")) {
-      buttonDjango.classList.remove("yellowBackground");
-    }
-    if (buttonAll.classList.contains("yellowBackground")) {
-      buttonAll.classList.remove("yellowBackground");
-    }
   }
-  //--------------Initialization
-  buttonJavascript.classList.toggle("yellowBackground");
-  showProjects([
-    a.formValidation,
-    a.seatBooking,
-    a.exchangeRateCalculator,
-    a.hangManGame,
-    a.mealFinder,
-    a.expenseTracker,
-    a.musicPlayer,
-    a.speedTyping,
-    a.SpeechToText,
-    a.memoryCard,
-    a.lyricSearching,
-    a.breakingBall,
-    a.speechRecognition,
-    a.dragAndDropList,
-  ]);
+  // //--------------Initialization
+  // buttonJavascript.classList.toggle("yellowBackground");
+  // showProjects([
+  //   a.formValidation,
+  //   a.seatBooking,
+  //   a.exchangeRateCalculator,
+  //   a.hangManGame,
+  //   a.mealFinder,
+  //   a.expenseTracker,
+  //   a.musicPlayer,
+  //   a.speedTyping,
+  //   a.SpeechToText,
+  //   a.memoryCard,
+  //   a.lyricSearching,
+  //   a.breakingBall,
+  //   a.speechRecognition,
+  //   a.dragAndDropList,
+  // ]);
   //----------------------Even Listener---------------------------
-  buttonWeb.addEventListener("click", () => {
-    checkButton();
-    buttonWeb.classList.toggle("yellowBackground");
-    showProjects([a.RelaxerApp, a.countingDown]);
-  });
 
   buttonJavascript.addEventListener("click", () => {
     checkButton();
     buttonJavascript.classList.toggle("yellowBackground");
-    showProjects([
-      a.formValidation,
-      a.seatBooking,
-      a.exchangeRateCalculator,
-      a.hangManGame,
-      a.mealFinder,
-      a.expenseTracker,
-      a.musicPlayer,
-      a.speedTyping,
-      a.SpeechToText,
-      a.memoryCard,
-      a.lyricSearching,
-      a.breakingBall,
-      a.speechRecognition,
-      a.dragAndDropList,
-    ]);
-  });
-
-  buttonReact.addEventListener("click", () => {
-    checkButton();
-    buttonReact.classList.toggle("yellowBackground");
-    showProjects([a.caroGame]);
-  });
-  buttonNodejs.addEventListener("click", () => {
-    checkButton();
-    buttonNodejs.classList.toggle("yellowBackground");
-    showProjects([]);
-  });
-  buttonDjango.addEventListener("click", () => {
-    checkButton();
-    buttonDjango.classList.toggle("yellowBackground");
-    showProjects([]);
-  });
-  buttonAll.addEventListener("click", () => {
-    checkButton();
-    buttonAll.classList.toggle("yellowBackground");
     showProjects([
       a.formValidation,
       a.seatBooking,
@@ -146,5 +95,16 @@ export default function setUpProjects() {
     ]);
   });
 
-  //----------------------------
+
+  buttonMERN.addEventListener("click", () => {
+    checkButton();
+    buttonMERN.classList.toggle("yellowBackground");
+    // show the project here
+  });
+  
+  buttonStatic.addEventListener("click", () => {
+    checkButton();
+    buttonStatic.classList.toggle("yellowBackground");
+    // show the project here
+  });
 }

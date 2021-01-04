@@ -1,4 +1,4 @@
-export default function skillSet() {
+const skillSet = () => {
   const filler = document.querySelectorAll(".measurement-filler");
   const values = [
     "70%",
@@ -17,8 +17,9 @@ export default function skillSet() {
   } else {
     for (let i = 0; i < values.length; i++) {
       filler[i].style.width = values[i];
-      console.log(filler[i]);
-      filler[i].style.borderRadius = "10px";
+      // filler[i].style.borderRadius = "10px";
     }
   }
 }
+
+export default skillSet

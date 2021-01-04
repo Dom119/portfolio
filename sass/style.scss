@@ -214,7 +214,7 @@ h1 {
         font-size: 1rem;
         color: black;
         background: #ccc;
-        width: 120px;
+        width: 170px;
         padding: 10px;
         margin: 10px 10px;
         border-radius: 2px;
@@ -414,8 +414,9 @@ h1 {
         .measurement-filler {
           height: 100%;
           background: yellow;
-          border-top-left-radius: 10px;
-          border-bottom-left-radius: 10px;
+          // border-top-left-radius: 10px;
+          // border-bottom-left-radius: 10px;
+          border-radius: 10px;
           transition: all 5s ease-in-out;
         }
       }
