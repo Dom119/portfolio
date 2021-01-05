@@ -3,28 +3,23 @@ const a = projectDatabase;
 
 export default function setUpProjects() {
   const buttonMERN = document.getElementById("MERN");
+  const buttonReactStatic = document.getElementById("react");
   const buttonJavascript = document.getElementById("javascript");
   const buttonStatic = document.getElementById("static");
  
 
   //----------------------HTML part----------------
-  // it is mainly for Javascript button
-  function showProjects(projects) {
+  function showProjectsJavaScript(projects) {
     const projectDisplay = document.getElementById("projectDisplay");
     let content = "";
     for (let i = 0; i < projects.length; i++) {
       content += `
-      <a href= 'projects/${projects[i].linkURL}/index.html' target='_blank' class="project">
+      <a href= '${projects[i].linkURL}' target='_blank' class="project">
         <div class="head">
-          <div class="icon">
-            <div class="red"></div>
-            <div class="yellow"></div>
-            <div class="green"></div>
-          </div>
           <div class="projectTitle">${projects[i].projectName}</div>
         </div>
         <div class="main">
-          <img src="projects/${projects[i].linkURL}/photo.png" />
+          <img src="images/${projects[i].projectName}.png" />
           <ul class="technologies">
       `;
       let keyWordList = "";
@@ -33,23 +28,46 @@ export default function setUpProjects() {
       }
       content += keyWordList;
       content += ` </ul>
-              <button class='learnMoreBtn' >Learn More</button>
-            </div>
-          </a>`;
+          <button class='learnMoreBtn' >Learn More</button>
+        </div>
+      </a>`;
     }
     projectDisplay.innerHTML = content;
   }
+  
+  function showProjectsMERN() {
+    const projectDisplay = document.getElementById("projectDisplay");
+    let content = "";
+    projectDisplay.innerHTML = content;
+  }
+
+  function showProjectsReactStatic() {
+    console.log('Iam here');
+    const projectDisplay = document.getElementById("projectDisplay");
+    let content = "";
+    projectDisplay.innerHTML = content;
+  }
+
+  function showProjectsStaticWeb() {
+    const projectDisplay = document.getElementById("projectDisplay");
+    let content = "";
+    projectDisplay.innerHTML = content;
+  }
+
 
   //--------Button Toggle------------------
   function checkButton() {
     if (buttonStatic.classList.contains("yellowBackground")) {
-      buttonWeb.classList.remove("yellowBackground");
+      buttonStatic.classList.remove("yellowBackground");
     }
     if (buttonJavascript.classList.contains("yellowBackground")) {
       buttonJavascript.classList.remove("yellowBackground");
     }
     if (buttonMERN.classList.contains("yellowBackground")) {
-      buttonReact.classList.remove("yellowBackground");
+      buttonMERN.classList.remove("yellowBackground");
+    }
+    if (buttonReactStatic.classList.contains("yellowBackground")) {
+      buttonReactStatic.classList.remove("yellowBackground");
     }
   }
   // //--------------Initialization
@@ -75,7 +93,7 @@ export default function setUpProjects() {
   buttonJavascript.addEventListener("click", () => {
     checkButton();
     buttonJavascript.classList.toggle("yellowBackground");
-    showProjects([
+    showProjectsJavaScript([
       a.formValidation,
       a.seatBooking,
       a.exchangeRateCalculator,
@@ -85,10 +103,8 @@ export default function setUpProjects() {
       a.musicPlayer,
       a.speedTyping,
       a.SpeechToText,
-      a.memoryCard,
       a.lyricSearching,
       a.breakingBall,
-      a.speechRecognition,
       a.dragAndDropList,
       a.countingDown,
       a.RelaxerApp,
@@ -99,12 +115,18 @@ export default function setUpProjects() {
   buttonMERN.addEventListener("click", () => {
     checkButton();
     buttonMERN.classList.toggle("yellowBackground");
-    // show the project here
+    showProjectsMERN()
+  });
+
+  buttonReactStatic.addEventListener("click", () => {
+    checkButton();
+    buttonReactStatic.classList.toggle("yellowBackground");
+    showProjectsReactStatic()
   });
   
   buttonStatic.addEventListener("click", () => {
     checkButton();
     buttonStatic.classList.toggle("yellowBackground");
-    // show the project here
+    showProjectsStaticWeb();
   });
 }

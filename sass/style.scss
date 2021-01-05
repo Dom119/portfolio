@@ -234,7 +234,7 @@ h1 {
       // width: 1200px;
       margin-top: 30px;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 40px;
       grid-row-gap: 40px;
       position: relative;
@@ -244,31 +244,31 @@ h1 {
         .head {
           background: #ccc;
           color: black;
-          .icon {
-            display: flex;
-            flex-direction: row;
-            position: absolute;
-            left: 5px;
-            top: 5px;
-            .red,
-            .yellow,
-            .green {
-              width: 20px;
-              height: 20px;
-              border-radius: 100px;
-              display: block;
-              margin-right: 5px;
-            }
-            .red {
-              background: #ff605c;
-            }
-            .yellow {
-              background: #ffbd44;
-            }
-            .green {
-              background: #00ca4e;
-            }
-          }
+          // .icon {
+          //   display: flex;
+          //   flex-direction: row;
+          //   position: absolute;
+          //   left: 5px;
+          //   top: 5px;
+          //   .red,
+          //   .yellow,
+          //   .green {
+          //     width: 20px;
+          //     height: 20px;
+          //     border-radius: 100px;
+          //     display: block;
+          //     margin-right: 5px;
+          //   }
+          //   .red {
+          //     background: #ff605c;
+          //   }
+          //   .yellow {
+          //     background: #ffbd44;
+          //   }
+          //   .green {
+          //     background: #00ca4e;
+          //   }
+          // }
           .projectTitle {
             height: 30px;
             display: flex;
@@ -309,7 +309,7 @@ h1 {
           ul {
             width: 70%;
             position: absolute;
-            top: 40%;
+            top: 20%;
             width: 100%;
             text-align: center;
             justify-content: center;
@@ -333,7 +333,7 @@ h1 {
           .learnMoreBtn {
             background: yellow;
             position: absolute;
-            top: 70%;
+            top: 60%;
             text-align: center;
             font-size: 1rem;
             padding: 10px 20px;
