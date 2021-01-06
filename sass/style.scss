@@ -50,9 +50,9 @@ a:hover {
   padding: 15px 20px;
 }
 
-li {
-  list-style-type: none;
-}
+// li {
+//   list-style-type: none;
+// }
 
 h3 {
   font-size: 1.5rem;
@@ -87,6 +87,10 @@ h1 {
 
 .bg-white {
   background: #ccc;
+}
+
+.yellow {
+  color: yellow;
 }
 
 //details
@@ -321,6 +325,7 @@ h1 {
             transform: translateY(-100px);
             transition: all 0.5s ease-in-out;
             z-index: 3;
+            list-style-type: none;
             li {
               background: white;
               color: #333;
@@ -385,9 +390,36 @@ h1 {
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 40px;
         .projectElementContent {
-          color: white;
+          color: #ccc;
+          background: linear-gradient(to right, black, #333);
           padding: 40px;
+          line-height: 1.5;
+          font-size: 1.2rem;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
           .elementTitle {
+            font-size: 1.5rem;
+          }
+          li {
+            margin-bottom: 10px;
+          }
+          button {
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            background: #333;
+            color: white;
+            border: none;
+            box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 1);
+          }
+          button:focus {
+            outline: none;
+          }
+          button:hover {
+            transform: scale(0.95);
+          }
+          .title {
             font-size: 1.5rem;
           }
         }

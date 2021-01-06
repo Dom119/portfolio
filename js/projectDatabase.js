@@ -96,5 +96,10 @@ const projectDatabase = {
     linkURL: "https://dom119.github.io/React-To-Do/",
     keyword: ["Context API"],
   },
+  socialMedia: {
+    projectName: "Social-Media",
+    linkURL: "",
+    keyword: [""],
+  }
 };
 export default projectDatabase;
