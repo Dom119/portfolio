@@ -231,6 +231,18 @@ h1 {
     opacity: 1;
     visibility: visible;
     transform: translateY(0); } }
+    .projects .container .projectDisplay.single {
+      display: flex;
+      flex-direction: column; }
+      .projects .container .projectDisplay.single .projectElement {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 40px; }
+        .projects .container .projectDisplay.single .projectElement .projectElementContent {
+          color: white;
+          padding: 40px; }
+          .projects .container .projectDisplay.single .projectElement .projectElementContent .elementTitle {
+            font-size: 1.5rem; }
 
 .about-me {
   background: #333333;
@@ -366,8 +378,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 76px;
-  margin-top: 71px;
+  margin-left: 91px;
+  margin-top: 70px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0s; }
 
@@ -391,8 +403,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 54px;
-  margin-top: 1px;
+  margin-left: 38px;
+  margin-top: 53px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.01s; }
 
@@ -416,8 +428,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1px;
-  margin-top: 12px;
+  margin-left: 91px;
+  margin-top: 91px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.02s; }
 
@@ -441,8 +453,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 74px;
-  margin-top: 56px;
+  margin-left: 82px;
+  margin-top: 11px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.03s; }
 
@@ -466,8 +478,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 51px;
-  margin-top: 55px;
+  margin-left: 32px;
+  margin-top: 49px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.04s; }
 
@@ -491,8 +503,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 61px;
-  margin-top: 56px;
+  margin-left: 98px;
+  margin-top: 53px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.05s; }
 
@@ -516,8 +528,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 14px;
-  margin-top: 13px;
+  margin-left: 13px;
+  margin-top: 38px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.06s; }
 
@@ -541,8 +553,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 11px;
-  margin-top: 97px;
+  margin-left: 17px;
+  margin-top: 98px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.07s; }
 
@@ -566,8 +578,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 68px;
-  margin-top: 40px;
+  margin-left: 2px;
+  margin-top: 37px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.08s; }
 
@@ -591,8 +603,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 2px;
-  margin-top: 47px;
+  margin-left: 25px;
+  margin-top: 22px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.09s; }
 
@@ -616,8 +628,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 66px;
-  margin-top: 20px;
+  margin-left: 46px;
+  margin-top: 76px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.1s; }
 
@@ -641,8 +653,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 20px;
-  margin-top: 69px;
+  margin-left: 60px;
+  margin-top: 88px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.11s; }
 
@@ -666,8 +678,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 22px;
-  margin-top: 48px;
+  margin-left: 1px;
+  margin-top: 61px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.12s; }
 
@@ -691,8 +703,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 85px;
-  margin-top: 31px;
+  margin-left: 9px;
+  margin-top: 63px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.13s; }
 
@@ -716,8 +728,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 38px;
-  margin-top: 96px;
+  margin-left: 78px;
+  margin-top: 63px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.14s; }
 
@@ -741,8 +753,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 99px;
-  margin-top: 64px;
+  margin-left: 23px;
+  margin-top: 17px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.15s; }
 
@@ -766,8 +778,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 32px;
-  margin-top: 20px;
+  margin-left: 2px;
+  margin-top: 25px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.16s; }
 
@@ -791,8 +803,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 79px;
-  margin-top: 89px;
+  margin-left: 6px;
+  margin-top: 19px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.17s; }
 
@@ -816,8 +828,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 57px;
-  margin-top: 11px;
+  margin-left: 75px;
+  margin-top: 91px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.18s; }
 
@@ -841,8 +853,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 47px;
-  margin-top: 83px;
+  margin-left: 80px;
+  margin-top: 15px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.19s; }
 
@@ -866,8 +878,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 88px;
-  margin-top: 61px;
+  margin-left: 78px;
+  margin-top: 23px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.2s; }
 
@@ -891,8 +903,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 62px;
-  margin-top: 49px;
+  margin-left: 90px;
+  margin-top: 48px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.21s; }
 
@@ -916,8 +928,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 43px;
-  margin-top: 24px;
+  margin-left: 28px;
+  margin-top: 23px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.22s; }
 
@@ -941,8 +953,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 10px;
-  margin-top: 67px;
+  margin-left: 47px;
+  margin-top: 13px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.23s; }
 
@@ -966,8 +978,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 46px;
-  margin-top: 11px;
+  margin-left: 47px;
+  margin-top: 27px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.24s; }
 
@@ -991,8 +1003,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 61px;
-  margin-top: 31px;
+  margin-left: 29px;
+  margin-top: 19px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.25s; }
 
@@ -1016,8 +1028,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 9px;
-  margin-top: 27px;
+  margin-left: 91px;
+  margin-top: 91px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.26s; }
 
@@ -1041,8 +1053,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 64px;
-  margin-top: 21px;
+  margin-left: 26px;
+  margin-top: 91px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.27s; }
 
@@ -1066,8 +1078,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 85px;
-  margin-top: 92px;
+  margin-left: 1px;
+  margin-top: 35px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.28s; }
 
@@ -1091,8 +1103,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 37px;
-  margin-top: 20px;
+  margin-left: 46px;
+  margin-top: 85px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.29s; }
 
@@ -1116,8 +1128,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1px;
-  margin-top: 85px;
+  margin-left: 94px;
+  margin-top: 96px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.3s; }
 
@@ -1141,8 +1153,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 62px;
-  margin-top: 43px;
+  margin-left: 43px;
+  margin-top: 66px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.31s; }
 
@@ -1166,8 +1178,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 11px;
-  margin-top: 88px;
+  margin-left: 16px;
+  margin-top: 53px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.32s; }
 
@@ -1191,8 +1203,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 89px;
-  margin-top: 51px;
+  margin-left: 62px;
+  margin-top: 7px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.33s; }
 
@@ -1216,8 +1228,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 35px;
-  margin-top: 56px;
+  margin-left: 81px;
+  margin-top: 57px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.34s; }
 
@@ -1241,8 +1253,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 76px;
-  margin-top: 6px;
+  margin-left: 21px;
+  margin-top: 51px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.35s; }
 
@@ -1266,8 +1278,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 24px;
-  margin-top: 54px;
+  margin-left: 25px;
+  margin-top: 55px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.36s; }
 
@@ -1291,8 +1303,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 40px;
-  margin-top: 81px;
+  margin-left: 24px;
+  margin-top: 4px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.37s; }
 
@@ -1316,8 +1328,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 36px;
-  margin-top: 47px;
+  margin-left: 6px;
+  margin-top: 31px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.38s; }
 
@@ -1341,8 +1353,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 57px;
-  margin-top: 76px;
+  margin-left: 62px;
+  margin-top: 22px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.39s; }
 
@@ -1366,8 +1378,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 88px;
-  margin-top: 11px;
+  margin-left: 38px;
+  margin-top: 45px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.4s; }
 
@@ -1391,8 +1403,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 35px;
-  margin-top: 44px;
+  margin-left: 27px;
+  margin-top: 23px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.41s; }
 
@@ -1416,8 +1428,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 26px;
-  margin-top: 82px;
+  margin-left: 6px;
+  margin-top: 69px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.42s; }
 
@@ -1441,8 +1453,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 64px;
-  margin-top: 33px;
+  margin-left: 45px;
+  margin-top: 91px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.43s; }
 
@@ -1466,8 +1478,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 94px;
-  margin-top: 85px;
+  margin-left: 64px;
+  margin-top: 63px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.44s; }
 
@@ -1491,8 +1503,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 74px;
-  margin-top: 20px;
+  margin-left: 97px;
+  margin-top: 13px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.45s; }
 
@@ -1516,8 +1528,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 98px;
-  margin-top: 17px;
+  margin-left: 32px;
+  margin-top: 81px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.46s; }
 
@@ -1541,8 +1553,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 64px;
-  margin-top: 16px;
+  margin-left: 26px;
+  margin-top: 7px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.47s; }
 
@@ -1566,8 +1578,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 48px;
-  margin-top: 14px;
+  margin-left: 55px;
+  margin-top: 55px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.48s; }
 
@@ -1591,8 +1603,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 20px;
-  margin-top: 34px;
+  margin-left: 63px;
+  margin-top: 16px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.49s; }
 
@@ -1616,8 +1628,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 68px;
-  margin-top: 54px;
+  margin-left: 35px;
+  margin-top: 29px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.5s; }
 
@@ -1641,8 +1653,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 81px;
-  margin-top: 4px;
+  margin-left: 95px;
+  margin-top: 49px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.51s; }
 
@@ -1666,8 +1678,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 17px;
-  margin-top: 15px;
+  margin-left: 9px;
+  margin-top: 81px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.52s; }
 
@@ -1691,8 +1703,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 48px;
-  margin-top: 87px;
+  margin-left: 58px;
+  margin-top: 4px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.53s; }
 
@@ -1716,8 +1728,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 59px;
-  margin-top: 71px;
+  margin-left: 31px;
+  margin-top: 29px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.54s; }
 
@@ -1741,8 +1753,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 39px;
-  margin-top: 81px;
+  margin-left: 64px;
+  margin-top: 85px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.55s; }
 
@@ -1766,8 +1778,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 17px;
-  margin-top: 48px;
+  margin-left: 47px;
+  margin-top: 93px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.56s; }
 
@@ -1791,8 +1803,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 70px;
-  margin-top: 72px;
+  margin-left: 79px;
+  margin-top: 77px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.57s; }
 
@@ -1816,8 +1828,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 93px;
-  margin-top: 32px;
+  margin-left: 59px;
+  margin-top: 33px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.58s; }
 
@@ -1841,8 +1853,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 97px;
-  margin-top: 16px;
+  margin-left: 46px;
+  margin-top: 20px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.59s; }
 
@@ -1866,8 +1878,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 100px;
-  margin-top: 68px;
+  margin-left: 24px;
+  margin-top: 86px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.6s; }
 
@@ -1891,8 +1903,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 25px;
-  margin-top: 46px;
+  margin-left: 26px;
+  margin-top: 83px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.61s; }
 
@@ -1916,8 +1928,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 92px;
-  margin-top: 95px;
+  margin-left: 88px;
+  margin-top: 58px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.62s; }
 
@@ -1941,8 +1953,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 77px;
-  margin-top: 79px;
+  margin-left: 7px;
+  margin-top: 80px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.63s; }
 
@@ -1966,8 +1978,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 40px;
-  margin-top: 87px;
+  margin-left: 82px;
+  margin-top: 86px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.64s; }
 
@@ -1991,8 +2003,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 79px;
-  margin-top: 95px;
+  margin-left: 22px;
+  margin-top: 35px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.65s; }
 
@@ -2016,8 +2028,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 80px;
-  margin-top: 70px;
+  margin-left: 66px;
+  margin-top: 25px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.66s; }
 
@@ -2041,8 +2053,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 84px;
-  margin-top: 76px;
+  margin-left: 15px;
+  margin-top: 5px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.67s; }
 
@@ -2066,7 +2078,7 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 72px;
+  margin-left: 47px;
   margin-top: 22px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.68s; }
@@ -2091,8 +2103,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 60px;
-  margin-top: 100px;
+  margin-left: 81px;
+  margin-top: 3px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.69s; }
 
@@ -2116,8 +2128,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 93px;
-  margin-top: 62px;
+  margin-left: 89px;
+  margin-top: 22px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.7s; }
 
@@ -2141,8 +2153,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 72px;
-  margin-top: 75px;
+  margin-left: 5px;
+  margin-top: 58px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.71s; }
 
@@ -2167,7 +2179,7 @@ h1 {
   position: absolute;
   opacity: 1;
   margin-left: 78px;
-  margin-top: 37px;
+  margin-top: 5px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.72s; }
 
@@ -2191,8 +2203,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 77px;
-  margin-top: 23px;
+  margin-left: 74px;
+  margin-top: 8px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.73s; }
 
@@ -2216,8 +2228,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 72px;
-  margin-top: 87px;
+  margin-left: 100px;
+  margin-top: 95px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.74s; }
 
@@ -2241,8 +2253,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 77px;
-  margin-top: 16px;
+  margin-left: 30px;
+  margin-top: 91px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.75s; }
 
@@ -2266,8 +2278,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 37px;
-  margin-top: 33px;
+  margin-left: 92px;
+  margin-top: 50px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.76s; }
 
@@ -2291,8 +2303,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 4px;
-  margin-top: 17px;
+  margin-left: 38px;
+  margin-top: 92px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.77s; }
 
@@ -2316,7 +2328,7 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 71px;
+  margin-left: 62px;
   margin-top: 7px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.78s; }
@@ -2341,8 +2353,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 16px;
-  margin-top: 48px;
+  margin-left: 67px;
+  margin-top: 69px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.79s; }
 
@@ -2366,8 +2378,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 61px;
-  margin-top: 81px;
+  margin-left: 32px;
+  margin-top: 73px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.8s; }
 
@@ -2391,8 +2403,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 32px;
-  margin-top: 24px;
+  margin-left: 6px;
+  margin-top: 75px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.81s; }
 
@@ -2416,8 +2428,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 29px;
-  margin-top: 62px;
+  margin-left: 10px;
+  margin-top: 23px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.82s; }
 
@@ -2441,8 +2453,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 75px;
-  margin-top: 3px;
+  margin-left: 27px;
+  margin-top: 40px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.83s; }
 
@@ -2466,8 +2478,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 93px;
-  margin-top: 88px;
+  margin-left: 71px;
+  margin-top: 6px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.84s; }
 
@@ -2491,8 +2503,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 57px;
-  margin-top: 87px;
+  margin-left: 58px;
+  margin-top: 59px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.85s; }
 
@@ -2516,8 +2528,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 37px;
-  margin-top: 49px;
+  margin-left: 15px;
+  margin-top: 15px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.86s; }
 
@@ -2541,8 +2553,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 83px;
-  margin-top: 94px;
+  margin-left: 63px;
+  margin-top: 42px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.87s; }
 
@@ -2566,8 +2578,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 32px;
-  margin-top: 46px;
+  margin-left: 89px;
+  margin-top: 27px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.88s; }
 
@@ -2591,8 +2603,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 12px;
-  margin-top: 82px;
+  margin-left: 57px;
+  margin-top: 15px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.89s; }
 
@@ -2616,8 +2628,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 17px;
-  margin-top: 3px;
+  margin-left: 51px;
+  margin-top: 47px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.9s; }
 
@@ -2641,8 +2653,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 33px;
-  margin-top: 80px;
+  margin-left: 16px;
+  margin-top: 33px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.91s; }
 
@@ -2666,8 +2678,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 8px;
-  margin-top: 17px;
+  margin-left: 54px;
+  margin-top: 69px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.92s; }
 
@@ -2691,8 +2703,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 93px;
-  margin-top: 12px;
+  margin-left: 94px;
+  margin-top: 47px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.93s; }
 
@@ -2716,8 +2728,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 89px;
-  margin-top: 85px;
+  margin-left: 77px;
+  margin-top: 4px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.94s; }
 
@@ -2741,8 +2753,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 84px;
-  margin-top: 19px;
+  margin-left: 73px;
+  margin-top: 49px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.95s; }
 
@@ -2766,8 +2778,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 59px;
-  margin-top: 72px;
+  margin-left: 60px;
+  margin-top: 67px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.96s; }
 
@@ -2791,8 +2803,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 73px;
-  margin-top: 81px;
+  margin-left: 60px;
+  margin-top: 26px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.97s; }
 
@@ -2816,8 +2828,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 56px;
-  margin-top: 60px;
+  margin-left: 16px;
+  margin-top: 86px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.98s; }
 
@@ -2841,8 +2853,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 83px;
-  margin-top: 10px;
+  margin-left: 63px;
+  margin-top: 32px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 0.99s; }
 
@@ -2866,8 +2878,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 100px;
-  margin-top: 84px;
+  margin-left: 10px;
+  margin-top: 53px;
   animation: animStar 5s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1s; }
 
@@ -2891,8 +2903,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 98px;
-  margin-top: 80px;
+  margin-left: 75px;
+  margin-top: 25px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.01s; }
 
@@ -2916,8 +2928,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 90px;
-  margin-top: 26px;
+  margin-left: 89px;
+  margin-top: 59px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.02s; }
 
@@ -2941,8 +2953,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 26px;
-  margin-top: 3px;
+  margin-left: 64px;
+  margin-top: 31px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.03s; }
 
@@ -2966,8 +2978,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 53px;
-  margin-top: 62px;
+  margin-left: 69px;
+  margin-top: 95px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.04s; }
 
@@ -2991,8 +3003,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 23px;
-  margin-top: 38px;
+  margin-left: 50px;
+  margin-top: 65px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.05s; }
 
@@ -3016,8 +3028,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 63px;
-  margin-top: 35px;
+  margin-left: 51px;
+  margin-top: 79px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.06s; }
 
@@ -3041,8 +3053,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 42px;
-  margin-top: 10px;
+  margin-left: 9px;
+  margin-top: 100px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.07s; }
 
@@ -3066,8 +3078,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 93px;
-  margin-top: 22px;
+  margin-left: 1px;
+  margin-top: 24px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.08s; }
 
@@ -3091,8 +3103,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 49px;
-  margin-top: 31px;
+  margin-left: 93px;
+  margin-top: 25px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.09s; }
 
@@ -3116,8 +3128,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 89px;
-  margin-top: 98px;
+  margin-left: 48px;
+  margin-top: 15px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.1s; }
 
@@ -3141,8 +3153,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 72px;
-  margin-top: 9px;
+  margin-left: 68px;
+  margin-top: 48px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.11s; }
 
@@ -3166,8 +3178,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 87px;
-  margin-top: 17px;
+  margin-left: 11px;
+  margin-top: 94px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.12s; }
 
@@ -3191,8 +3203,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 40px;
-  margin-top: 19px;
+  margin-left: 10px;
+  margin-top: 46px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.13s; }
 
@@ -3216,8 +3228,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 35px;
-  margin-top: 55px;
+  margin-left: 10px;
+  margin-top: 56px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.14s; }
 
@@ -3241,8 +3253,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 30px;
-  margin-top: 12px;
+  margin-left: 90px;
+  margin-top: 20px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.15s; }
 
@@ -3266,8 +3278,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 45px;
-  margin-top: 58px;
+  margin-left: 43px;
+  margin-top: 89px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.16s; }
 
@@ -3291,8 +3303,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 39px;
-  margin-top: 27px;
+  margin-left: 17px;
+  margin-top: 46px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.17s; }
 
@@ -3316,8 +3328,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 21px;
-  margin-top: 38px;
+  margin-left: 33px;
+  margin-top: 33px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.18s; }
 
@@ -3341,8 +3353,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 4px;
-  margin-top: 46px;
+  margin-left: 54px;
+  margin-top: 35px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.19s; }
 
@@ -3366,8 +3378,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 65px;
-  margin-top: 22px;
+  margin-left: 63px;
+  margin-top: 66px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.2s; }
 
@@ -3391,8 +3403,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 69px;
-  margin-top: 7px;
+  margin-left: 21px;
+  margin-top: 41px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.21s; }
 
@@ -3416,8 +3428,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 72px;
-  margin-top: 50px;
+  margin-left: 23px;
+  margin-top: 22px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.22s; }
 
@@ -3441,8 +3453,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 36px;
-  margin-top: 78px;
+  margin-left: 15px;
+  margin-top: 12px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.23s; }
 
@@ -3466,8 +3478,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 100px;
-  margin-top: 54px;
+  margin-left: 64px;
+  margin-top: 24px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.24s; }
 
@@ -3491,8 +3503,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1px;
-  margin-top: 2px;
+  margin-left: 27px;
+  margin-top: 34px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.25s; }
 
@@ -3516,8 +3528,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 26px;
-  margin-top: 97px;
+  margin-left: 20px;
+  margin-top: 32px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.26s; }
 
@@ -3541,8 +3553,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 19px;
-  margin-top: 67px;
+  margin-left: 89px;
+  margin-top: 5px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.27s; }
 
@@ -3566,8 +3578,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 51px;
-  margin-top: 26px;
+  margin-left: 28px;
+  margin-top: 74px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.28s; }
 
@@ -3591,8 +3603,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 84px;
-  margin-top: 59px;
+  margin-left: 2px;
+  margin-top: 83px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.29s; }
 
@@ -3616,8 +3628,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 49px;
-  margin-top: 78px;
+  margin-left: 79px;
+  margin-top: 15px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.3s; }
 
@@ -3641,8 +3653,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 91px;
-  margin-top: 37px;
+  margin-left: 44px;
+  margin-top: 98px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.31s; }
 
@@ -3666,8 +3678,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 89px;
-  margin-top: 44px;
+  margin-left: 48px;
+  margin-top: 32px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.32s; }
 
@@ -3691,8 +3703,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 72px;
-  margin-top: 72px;
+  margin-left: 3px;
+  margin-top: 20px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.33s; }
 
@@ -3716,8 +3728,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 19px;
-  margin-top: 34px;
+  margin-left: 78px;
+  margin-top: 11px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.34s; }
 
@@ -3741,8 +3753,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 45px;
-  margin-top: 57px;
+  margin-left: 68px;
+  margin-top: 14px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.35s; }
 
@@ -3766,8 +3778,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 55px;
-  margin-top: 46px;
+  margin-left: 92px;
+  margin-top: 74px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.36s; }
 
@@ -3791,8 +3803,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 80px;
-  margin-top: 31px;
+  margin-left: 3px;
+  margin-top: 85px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.37s; }
 
@@ -3816,8 +3828,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 30px;
-  margin-top: 59px;
+  margin-left: 5px;
+  margin-top: 33px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.38s; }
 
@@ -3841,8 +3853,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 37px;
-  margin-top: 47px;
+  margin-left: 21px;
+  margin-top: 90px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.39s; }
 
@@ -3866,8 +3878,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 83px;
-  margin-top: 22px;
+  margin-left: 55px;
+  margin-top: 87px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.4s; }
 
@@ -3891,8 +3903,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 37px;
-  margin-top: 98px;
+  margin-left: 69px;
+  margin-top: 45px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.41s; }
 
@@ -3916,8 +3928,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 3px;
-  margin-top: 78px;
+  margin-left: 31px;
+  margin-top: 71px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.42s; }
 
@@ -3941,8 +3953,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 8px;
-  margin-top: 93px;
+  margin-left: 78px;
+  margin-top: 19px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.43s; }
 
@@ -3966,8 +3978,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 23px;
-  margin-top: 95px;
+  margin-left: 82px;
+  margin-top: 49px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.44s; }
 
@@ -3991,8 +4003,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 76px;
-  margin-top: 96px;
+  margin-left: 39px;
+  margin-top: 93px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.45s; }
 
@@ -4016,8 +4028,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 85px;
-  margin-top: 98px;
+  margin-left: 73px;
+  margin-top: 21px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.46s; }
 
@@ -4042,7 +4054,7 @@ h1 {
   position: absolute;
   opacity: 1;
   margin-left: 33px;
-  margin-top: 95px;
+  margin-top: 66px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.47s; }
 
@@ -4066,8 +4078,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 77px;
-  margin-top: 14px;
+  margin-left: 63px;
+  margin-top: 62px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.48s; }
 
@@ -4091,8 +4103,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 68px;
-  margin-top: 28px;
+  margin-left: 20px;
+  margin-top: 71px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.49s; }
 
@@ -4116,8 +4128,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 32px;
-  margin-top: 89px;
+  margin-left: 42px;
+  margin-top: 30px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.5s; }
 
@@ -4141,8 +4153,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 45px;
-  margin-top: 50px;
+  margin-left: 6px;
+  margin-top: 49px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.51s; }
 
@@ -4166,8 +4178,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 76px;
-  margin-top: 21px;
+  margin-left: 94px;
+  margin-top: 23px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.52s; }
 
@@ -4191,8 +4203,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 21px;
-  margin-top: 44px;
+  margin-left: 41px;
+  margin-top: 33px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.53s; }
 
@@ -4216,8 +4228,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 81px;
-  margin-top: 83px;
+  margin-left: 8px;
+  margin-top: 92px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.54s; }
 
@@ -4241,8 +4253,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 29px;
-  margin-top: 73px;
+  margin-left: 21px;
+  margin-top: 60px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.55s; }
 
@@ -4266,8 +4278,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1px;
-  margin-top: 26px;
+  margin-left: 100px;
+  margin-top: 31px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.56s; }
 
@@ -4291,8 +4303,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 73px;
-  margin-top: 14px;
+  margin-left: 12px;
+  margin-top: 23px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.57s; }
 
@@ -4316,8 +4328,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 46px;
-  margin-top: 92px;
+  margin-left: 70px;
+  margin-top: 15px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.58s; }
 
@@ -4341,8 +4353,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 18px;
-  margin-top: 48px;
+  margin-left: 29px;
+  margin-top: 57px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.59s; }
 
@@ -4366,8 +4378,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 43px;
-  margin-top: 13px;
+  margin-left: 86px;
+  margin-top: 59px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.6s; }
 
@@ -4392,7 +4404,7 @@ h1 {
   position: absolute;
   opacity: 1;
   margin-left: 52px;
-  margin-top: 15px;
+  margin-top: 90px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.61s; }
 
@@ -4416,8 +4428,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 86px;
-  margin-top: 10px;
+  margin-left: 19px;
+  margin-top: 35px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.62s; }
 
@@ -4441,8 +4453,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 63px;
-  margin-top: 16px;
+  margin-left: 72px;
+  margin-top: 30px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.63s; }
 
@@ -4466,8 +4478,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 40px;
-  margin-top: 61px;
+  margin-left: 56px;
+  margin-top: 11px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.64s; }
 
@@ -4491,8 +4503,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 56px;
-  margin-top: 33px;
+  margin-left: 36px;
+  margin-top: 75px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.65s; }
 
@@ -4516,8 +4528,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 16px;
-  margin-top: 100px;
+  margin-left: 29px;
+  margin-top: 55px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.66s; }
 
@@ -4541,8 +4553,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 14px;
-  margin-top: 80px;
+  margin-left: 12px;
+  margin-top: 93px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.67s; }
 
@@ -4567,7 +4579,7 @@ h1 {
   position: absolute;
   opacity: 1;
   margin-left: 39px;
-  margin-top: 55px;
+  margin-top: 92px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.68s; }
 
@@ -4591,8 +4603,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 83px;
-  margin-top: 54px;
+  margin-left: 77px;
+  margin-top: 1px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.69s; }
 
@@ -4616,8 +4628,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 56px;
-  margin-top: 36px;
+  margin-left: 13px;
+  margin-top: 87px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.7s; }
 
@@ -4641,8 +4653,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 32px;
-  margin-top: 37px;
+  margin-left: 12px;
+  margin-top: 53px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.71s; }
 
@@ -4666,8 +4678,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 53px;
-  margin-top: 91px;
+  margin-left: 59px;
+  margin-top: 59px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.72s; }
 
@@ -4691,8 +4703,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 69px;
-  margin-top: 15px;
+  margin-left: 98px;
+  margin-top: 33px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.73s; }
 
@@ -4716,8 +4728,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 16px;
-  margin-top: 47px;
+  margin-left: 91px;
+  margin-top: 93px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.74s; }
 
@@ -4741,8 +4753,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 11px;
-  margin-top: 12px;
+  margin-left: 34px;
+  margin-top: 44px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.75s; }
 
@@ -4766,8 +4778,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 20px;
-  margin-top: 71px;
+  margin-left: 46px;
+  margin-top: 74px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.76s; }
 
@@ -4791,8 +4803,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 78px;
-  margin-top: 1px;
+  margin-left: 63px;
+  margin-top: 84px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.77s; }
 
@@ -4816,8 +4828,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 88px;
-  margin-top: 100px;
+  margin-left: 7px;
+  margin-top: 42px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.78s; }
 
@@ -4841,8 +4853,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 15px;
-  margin-top: 32px;
+  margin-left: 31px;
+  margin-top: 61px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.79s; }
 
@@ -4866,8 +4878,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 21px;
-  margin-top: 73px;
+  margin-left: 2px;
+  margin-top: 22px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.8s; }
 
@@ -4891,8 +4903,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 61px;
-  margin-top: 32px;
+  margin-left: 6px;
+  margin-top: 73px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.81s; }
 
@@ -4916,8 +4928,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 57px;
-  margin-top: 40px;
+  margin-left: 56px;
+  margin-top: 5px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.82s; }
 
@@ -4941,8 +4953,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 46px;
-  margin-top: 90px;
+  margin-left: 21px;
+  margin-top: 7px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.83s; }
 
@@ -4966,8 +4978,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 69px;
-  margin-top: 16px;
+  margin-left: 56px;
+  margin-top: 29px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.84s; }
 
@@ -4991,8 +5003,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 3px;
-  margin-top: 54px;
+  margin-left: 19px;
+  margin-top: 59px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.85s; }
 
@@ -5016,8 +5028,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 65px;
-  margin-top: 14px;
+  margin-left: 99px;
+  margin-top: 28px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.86s; }
 
@@ -5041,8 +5053,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 4px;
-  margin-top: 42px;
+  margin-left: 93px;
+  margin-top: 56px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.87s; }
 
@@ -5066,8 +5078,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 52px;
-  margin-top: 87px;
+  margin-left: 64px;
+  margin-top: 38px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.88s; }
 
@@ -5091,8 +5103,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 15px;
-  margin-top: 47px;
+  margin-left: 5px;
+  margin-top: 22px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.89s; }
 
@@ -5116,8 +5128,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 71px;
-  margin-top: 88px;
+  margin-left: 87px;
+  margin-top: 55px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.9s; }
 
@@ -5141,8 +5153,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 36px;
-  margin-top: 93px;
+  margin-left: 38px;
+  margin-top: 39px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.91s; }
 
@@ -5166,8 +5178,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 100px;
-  margin-top: 25px;
+  margin-left: 38px;
+  margin-top: 63px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.92s; }
 
@@ -5191,8 +5203,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 53px;
-  margin-top: 18px;
+  margin-left: 95px;
+  margin-top: 9px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.93s; }
 
@@ -5216,8 +5228,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 97px;
-  margin-top: 17px;
+  margin-left: 52px;
+  margin-top: 15px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.94s; }
 
@@ -5241,8 +5253,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 46px;
-  margin-top: 82px;
+  margin-left: 42px;
+  margin-top: 89px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.95s; }
 
@@ -5266,7 +5278,7 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 76px;
+  margin-left: 57px;
   margin-top: 58px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.96s; }
@@ -5291,8 +5303,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 14px;
-  margin-top: 70px;
+  margin-left: 80px;
+  margin-top: 9px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.97s; }
 
@@ -5316,8 +5328,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 79px;
-  margin-top: 4px;
+  margin-left: 9px;
+  margin-top: 19px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.98s; }
 
@@ -5341,8 +5353,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 75px;
-  margin-top: 32px;
+  margin-left: 42px;
+  margin-top: 70px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 1.99s; }
 
@@ -5366,8 +5378,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 89px;
-  margin-top: 30px;
+  margin-left: 25px;
+  margin-top: 11px;
   animation: animStar 4s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2s; }
 
@@ -5391,8 +5403,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 76px;
-  margin-top: 98px;
+  margin-left: 44px;
+  margin-top: 76px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.01s; }
 
@@ -5416,8 +5428,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 55px;
-  margin-top: 35px;
+  margin-left: 88px;
+  margin-top: 79px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.02s; }
 
@@ -5441,8 +5453,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 98px;
-  margin-top: 53px;
+  margin-left: 29px;
+  margin-top: 64px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.03s; }
 
@@ -5466,8 +5478,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 83px;
-  margin-top: 38px;
+  margin-left: 17px;
+  margin-top: 4px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.04s; }
 
@@ -5491,8 +5503,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 55px;
-  margin-top: 9px;
+  margin-left: 46px;
+  margin-top: 72px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.05s; }
 
@@ -5516,8 +5528,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 25px;
-  margin-top: 29px;
+  margin-left: 29px;
+  margin-top: 3px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.06s; }
 
@@ -5541,8 +5553,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 24px;
-  margin-top: 58px;
+  margin-left: 58px;
+  margin-top: 74px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.07s; }
 
@@ -5566,8 +5578,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 23px;
-  margin-top: 23px;
+  margin-left: 51px;
+  margin-top: 18px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.08s; }
 
@@ -5591,8 +5603,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 29px;
-  margin-top: 91px;
+  margin-left: 9px;
+  margin-top: 75px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.09s; }
 
@@ -5616,8 +5628,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 63px;
-  margin-top: 65px;
+  margin-left: 82px;
+  margin-top: 32px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.1s; }
 
@@ -5641,8 +5653,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 7px;
-  margin-top: 18px;
+  margin-left: 51px;
+  margin-top: 37px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.11s; }
 
@@ -5666,8 +5678,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 64px;
-  margin-top: 55px;
+  margin-left: 67px;
+  margin-top: 42px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.12s; }
 
@@ -5691,8 +5703,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 56px;
-  margin-top: 48px;
+  margin-left: 28px;
+  margin-top: 33px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.13s; }
 
@@ -5716,8 +5728,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 83px;
-  margin-top: 61px;
+  margin-left: 11px;
+  margin-top: 48px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.14s; }
 
@@ -5741,8 +5753,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 11px;
-  margin-top: 18px;
+  margin-left: 65px;
+  margin-top: 1px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.15s; }
 
@@ -5766,8 +5778,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 8px;
-  margin-top: 5px;
+  margin-left: 5px;
+  margin-top: 10px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.16s; }
 
@@ -5791,8 +5803,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 89px;
-  margin-top: 71px;
+  margin-left: 43px;
+  margin-top: 89px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.17s; }
 
@@ -5816,8 +5828,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 73px;
-  margin-top: 45px;
+  margin-left: 84px;
+  margin-top: 62px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.18s; }
 
@@ -5841,8 +5853,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 72px;
-  margin-top: 29px;
+  margin-left: 44px;
+  margin-top: 50px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.19s; }
 
@@ -5866,8 +5878,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 92px;
-  margin-top: 31px;
+  margin-left: 42px;
+  margin-top: 88px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.2s; }
 
@@ -5891,8 +5903,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 49px;
-  margin-top: 54px;
+  margin-left: 6px;
+  margin-top: 95px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.21s; }
 
@@ -5917,7 +5929,7 @@ h1 {
   position: absolute;
   opacity: 1;
   margin-left: 45px;
-  margin-top: 6px;
+  margin-top: 34px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.22s; }
 
@@ -5941,8 +5953,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 66px;
-  margin-top: 84px;
+  margin-left: 18px;
+  margin-top: 12px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.23s; }
 
@@ -5966,8 +5978,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 92px;
-  margin-top: 31px;
+  margin-left: 47px;
+  margin-top: 57px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.24s; }
 
@@ -5991,8 +6003,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 86px;
-  margin-top: 48px;
+  margin-left: 48px;
+  margin-top: 4px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.25s; }
 
@@ -6016,8 +6028,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 43px;
-  margin-top: 74px;
+  margin-left: 96px;
+  margin-top: 70px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.26s; }
 
@@ -6041,8 +6053,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 56px;
-  margin-top: 80px;
+  margin-left: 100px;
+  margin-top: 8px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.27s; }
 
@@ -6066,8 +6078,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 28px;
-  margin-top: 92px;
+  margin-left: 75px;
+  margin-top: 52px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.28s; }
 
@@ -6091,8 +6103,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 46px;
-  margin-top: 72px;
+  margin-left: 4px;
+  margin-top: 95px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.29s; }
 
@@ -6116,8 +6128,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 63px;
-  margin-top: 35px;
+  margin-left: 8px;
+  margin-top: 64px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.3s; }
 
@@ -6141,8 +6153,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 33px;
-  margin-top: 52px;
+  margin-left: 3px;
+  margin-top: 37px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.31s; }
 
@@ -6166,8 +6178,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 53px;
-  margin-top: 90px;
+  margin-left: 92px;
+  margin-top: 61px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.32s; }
 
@@ -6191,8 +6203,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 59px;
-  margin-top: 6px;
+  margin-left: 16px;
+  margin-top: 81px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.33s; }
 
@@ -6216,8 +6228,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 15px;
-  margin-top: 72px;
+  margin-left: 51px;
+  margin-top: 21px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.34s; }
 
@@ -6241,8 +6253,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 45px;
-  margin-top: 9px;
+  margin-left: 79px;
+  margin-top: 12px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.35s; }
 
@@ -6266,8 +6278,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 48px;
-  margin-top: 33px;
+  margin-left: 96px;
+  margin-top: 41px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.36s; }
 
@@ -6291,8 +6303,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 47px;
-  margin-top: 87px;
+  margin-left: 20px;
+  margin-top: 4px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.37s; }
 
@@ -6316,8 +6328,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 71px;
-  margin-top: 21px;
+  margin-left: 100px;
+  margin-top: 24px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.38s; }
 
@@ -6341,8 +6353,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 23px;
-  margin-top: 67px;
+  margin-left: 87px;
+  margin-top: 72px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.39s; }
 
@@ -6366,8 +6378,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 41px;
-  margin-top: 84px;
+  margin-left: 58px;
+  margin-top: 47px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.4s; }
 
@@ -6391,8 +6403,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1px;
-  margin-top: 14px;
+  margin-left: 29px;
+  margin-top: 50px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.41s; }
 
@@ -6416,8 +6428,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 49px;
-  margin-top: 61px;
+  margin-left: 77px;
+  margin-top: 17px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.42s; }
 
@@ -6441,8 +6453,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 86px;
-  margin-top: 64px;
+  margin-left: 11px;
+  margin-top: 71px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.43s; }
 
@@ -6466,8 +6478,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 4px;
-  margin-top: 64px;
+  margin-left: 28px;
+  margin-top: 77px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.44s; }
 
@@ -6491,8 +6503,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 82px;
-  margin-top: 8px;
+  margin-left: 49px;
+  margin-top: 48px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.45s; }
 
@@ -6516,8 +6528,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 94px;
-  margin-top: 18px;
+  margin-left: 10px;
+  margin-top: 46px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.46s; }
 
@@ -6541,8 +6553,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 13px;
-  margin-top: 54px;
+  margin-left: 63px;
+  margin-top: 55px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.47s; }
 
@@ -6566,8 +6578,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 21px;
-  margin-top: 68px;
+  margin-left: 63px;
+  margin-top: 94px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.48s; }
 
@@ -6591,8 +6603,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 17px;
-  margin-top: 44px;
+  margin-left: 58px;
+  margin-top: 45px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.49s; }
 
@@ -6616,8 +6628,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 15px;
-  margin-top: 26px;
+  margin-left: 54px;
+  margin-top: 2px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.5s; }
 
@@ -6641,8 +6653,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 74px;
-  margin-top: 88px;
+  margin-left: 55px;
+  margin-top: 36px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.51s; }
 
@@ -6666,8 +6678,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1px;
-  margin-top: 97px;
+  margin-left: 23px;
+  margin-top: 90px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.52s; }
 
@@ -6691,8 +6703,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 46px;
-  margin-top: 89px;
+  margin-left: 50px;
+  margin-top: 41px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.53s; }
 
@@ -6716,8 +6728,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 77px;
-  margin-top: 75px;
+  margin-left: 29px;
+  margin-top: 21px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.54s; }
 
@@ -6741,8 +6753,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 94px;
-  margin-top: 83px;
+  margin-left: 3px;
+  margin-top: 28px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.55s; }
 
@@ -6766,8 +6778,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 79px;
-  margin-top: 26px;
+  margin-left: 5px;
+  margin-top: 80px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.56s; }
 
@@ -6791,8 +6803,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 78px;
-  margin-top: 20px;
+  margin-left: 26px;
+  margin-top: 35px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.57s; }
 
@@ -6816,8 +6828,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 16px;
-  margin-top: 60px;
+  margin-left: 31px;
+  margin-top: 43px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.58s; }
 
@@ -6841,8 +6853,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 65px;
-  margin-top: 92px;
+  margin-left: 67px;
+  margin-top: 56px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.59s; }
 
@@ -6866,8 +6878,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 8px;
-  margin-top: 31px;
+  margin-left: 27px;
+  margin-top: 28px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.6s; }
 
@@ -6891,8 +6903,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 3px;
-  margin-top: 50px;
+  margin-left: 11px;
+  margin-top: 7px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.61s; }
 
@@ -6916,8 +6928,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 24px;
-  margin-top: 70px;
+  margin-left: 3px;
+  margin-top: 42px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.62s; }
 
@@ -6941,8 +6953,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 94px;
-  margin-top: 13px;
+  margin-left: 90px;
+  margin-top: 99px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.63s; }
 
@@ -6966,8 +6978,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 79px;
-  margin-top: 63px;
+  margin-left: 58px;
+  margin-top: 8px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.64s; }
 
@@ -6991,8 +7003,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 11px;
-  margin-top: 79px;
+  margin-left: 81px;
+  margin-top: 36px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.65s; }
 
@@ -7016,8 +7028,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 67px;
-  margin-top: 79px;
+  margin-left: 12px;
+  margin-top: 53px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.66s; }
 
@@ -7041,8 +7053,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 28px;
-  margin-top: 96px;
+  margin-left: 91px;
+  margin-top: 62px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.67s; }
 
@@ -7066,8 +7078,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 16px;
-  margin-top: 11px;
+  margin-left: 80px;
+  margin-top: 90px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.68s; }
 
@@ -7091,8 +7103,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 95px;
-  margin-top: 63px;
+  margin-left: 78px;
+  margin-top: 38px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.69s; }
 
@@ -7116,8 +7128,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 51px;
-  margin-top: 33px;
+  margin-left: 11px;
+  margin-top: 47px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.7s; }
 
@@ -7141,8 +7153,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 77px;
-  margin-top: 10px;
+  margin-left: 35px;
+  margin-top: 96px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.71s; }
 
@@ -7166,8 +7178,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 68px;
-  margin-top: 59px;
+  margin-left: 91px;
+  margin-top: 42px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.72s; }
 
@@ -7191,8 +7203,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 8px;
-  margin-top: 26px;
+  margin-left: 5px;
+  margin-top: 47px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.73s; }
 
@@ -7216,8 +7228,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 95px;
-  margin-top: 15px;
+  margin-left: 77px;
+  margin-top: 79px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.74s; }
 
@@ -7241,8 +7253,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 46px;
-  margin-top: 24px;
+  margin-left: 79px;
+  margin-top: 41px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.75s; }
 
@@ -7266,8 +7278,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 1px;
-  margin-top: 95px;
+  margin-left: 88px;
+  margin-top: 60px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.76s; }
 
@@ -7291,8 +7303,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 55px;
-  margin-top: 32px;
+  margin-left: 23px;
+  margin-top: 15px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.77s; }
 
@@ -7316,8 +7328,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 39px;
-  margin-top: 57px;
+  margin-left: 65px;
+  margin-top: 80px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.78s; }
 
@@ -7341,8 +7353,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 13px;
-  margin-top: 97px;
+  margin-left: 50px;
+  margin-top: 57px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.79s; }
 
@@ -7366,8 +7378,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 98px;
-  margin-top: 69px;
+  margin-left: 16px;
+  margin-top: 56px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.8s; }
 
@@ -7391,8 +7403,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 74px;
-  margin-top: 40px;
+  margin-left: 91px;
+  margin-top: 83px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.81s; }
 
@@ -7416,8 +7428,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 60px;
-  margin-top: 11px;
+  margin-left: 11px;
+  margin-top: 45px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.82s; }
 
@@ -7441,8 +7453,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 70px;
-  margin-top: 57px;
+  margin-left: 32px;
+  margin-top: 77px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.83s; }
 
@@ -7466,8 +7478,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 73px;
-  margin-top: 36px;
+  margin-left: 49px;
+  margin-top: 27px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.84s; }
 
@@ -7491,8 +7503,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 64px;
-  margin-top: 10px;
+  margin-left: 30px;
+  margin-top: 59px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.85s; }
 
@@ -7516,8 +7528,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 50px;
-  margin-top: 17px;
+  margin-left: 43px;
+  margin-top: 1px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.86s; }
 
@@ -7541,8 +7553,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 2px;
-  margin-top: 87px;
+  margin-left: 43px;
+  margin-top: 92px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.87s; }
 
@@ -7566,8 +7578,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 9px;
-  margin-top: 67px;
+  margin-left: 71px;
+  margin-top: 19px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.88s; }
 
@@ -7591,8 +7603,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 33px;
-  margin-top: 91px;
+  margin-left: 88px;
+  margin-top: 34px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.89s; }
 
@@ -7616,8 +7628,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 80px;
-  margin-top: 72px;
+  margin-left: 71px;
+  margin-top: 40px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.9s; }
 
@@ -7641,8 +7653,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 94px;
-  margin-top: 29px;
+  margin-left: 33px;
+  margin-top: 31px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.91s; }
 
@@ -7666,8 +7678,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 67px;
-  margin-top: 38px;
+  margin-left: 80px;
+  margin-top: 5px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.92s; }
 
@@ -7691,8 +7703,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 44px;
-  margin-top: 11px;
+  margin-left: 73px;
+  margin-top: 88px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.93s; }
 
@@ -7716,8 +7728,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 10px;
-  margin-top: 34px;
+  margin-left: 28px;
+  margin-top: 80px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.94s; }
 
@@ -7741,8 +7753,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 62px;
-  margin-top: 27px;
+  margin-left: 12px;
+  margin-top: 71px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.95s; }
 
@@ -7766,8 +7778,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 5px;
-  margin-top: 29px;
+  margin-left: 56px;
+  margin-top: 9px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.96s; }
 
@@ -7791,8 +7803,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 83px;
-  margin-top: 18px;
+  margin-left: 84px;
+  margin-top: 50px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.97s; }
 
@@ -7816,8 +7828,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 16px;
-  margin-top: 24px;
+  margin-left: 80px;
+  margin-top: 12px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.98s; }
 
@@ -7841,8 +7853,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 75px;
-  margin-top: 85px;
+  margin-left: 79px;
+  margin-top: 68px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 2.99s; }
 
@@ -7866,8 +7878,8 @@ h1 {
   border-radius: 50%;
   position: absolute;
   opacity: 1;
-  margin-left: 2px;
-  margin-top: 65px;
+  margin-left: 83px;
+  margin-top: 90px;
   animation: animStar 2s linear infinite, twinkle 1s linear infinite;
   animation-delay: 3s; }
 

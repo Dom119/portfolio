@@ -230,6 +230,7 @@ h1 {
       }
     }
     //the view of all project
+    //For Vanilla Javascript and React Static App
     .projectDisplay {
       // width: 1200px;
       margin-top: 30px;
@@ -372,6 +373,23 @@ h1 {
           visibility: visible;
           transform: translateY(0);
           // transform: scale(1);
+        }
+      }
+    }
+    //For MERN stack and Static Web
+    .projectDisplay.single {
+      display: flex;
+      flex-direction: column;
+      .projectElement {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 40px;
+        .projectElementContent {
+          color: white;
+          padding: 40px;
+          .elementTitle {
+            font-size: 1.5rem;
+          }
         }
       }
     }

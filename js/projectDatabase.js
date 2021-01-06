@@ -68,6 +68,33 @@ const projectDatabase = {
     projectName: "Drag-And-Drop",
     linkURL: "https://dom119.github.io/JavaScript-Sortable-List/",
     keyword: ["Drag And Drop API"],
-  }
+  },
+  //Static web------------------------------------
+   portfolio: {
+    projectName: "My-Portfolio",
+    linkURL: "https://dom119.github.io/portfolio/",
+    keyword: [],
+  },
+  //React app-------------------------------------
+  caroGame: {
+    projectName: "Caro-Game",
+    linkURL: "https://dom119.github.io/React-Caro-Game/",
+    keyword: ["Use State"],
+  },
+  shoppingList: {
+    projectName: "Mini-Shopping-List",
+    linkURL: "https://dom119.github.io/React-Mini-Shopping-List/",
+    keyword: ["Props Drilling"],
+  },
+  githubFinder: {
+    projectName: "Github-Finder",
+    linkURL: "https://dom119.github.io/React-Github-Finder/",
+    keyword: ["Context API"],
+  },
+  toDoList: {
+    projectName: "To-Do-List",
+    linkURL: "https://dom119.github.io/React-To-Do/",
+    keyword: ["Context API"],
+  },
 };
 export default projectDatabase;
