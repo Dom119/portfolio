@@ -1,0 +1,31 @@
+.MERN {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 80px;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.MERN-element {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+.MERNProjectDescription {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 0 40px;
+  margin: 20px 0px;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+/* .carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(100%);
+} */

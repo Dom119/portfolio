@@ -63,7 +63,7 @@ export default function setUpEmails() {
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
         document.getElementById("message").value = "";
-      }, 4000);
+      }, 5000);
     }
   });
 }

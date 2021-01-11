@@ -27,6 +27,11 @@
       rel="stylesheet"
     />
 
+    <!-- Bootstraps 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap4Support.css">
+    
     <!-- Email JS file -->
     <script
       type="text/javascript"
@@ -96,10 +101,10 @@
         <h3>My Projects</h3>
         <div class="line"></div>
         <div class="projectNavigators">
-          <button id="MERN">MERN Stack</button>
-          <button id="react">React Static App</button>
-          <button id="javascript">Vanilla JavaScript</button>
-          <button id="static">Static Web</button>
+          <button id="MERN" class='btn'>MERN Stack   <span class="badge badge-dark"> 2</span></button>
+          <button id="react" class='btn'>React Static App <span class="badge badge-dark"> 3</span></button>
+          <button id="javascript" class='btn'>Vanilla JavaScript <span class="badge badge-dark"> 14</span></button>
+          <button id="static" class='btn'>Static Web <span class="badge badge-dark"> 1</span></button>
         </div>
         <div id="projectDisplay" class="projectDisplay">
           <!-- single project, focus on this -->
@@ -131,7 +136,7 @@
       </div>
     </section>
 <!-- My skills -->
-    <section class="mySkills">
+    <!-- <section class="mySkills">
       <div class="container">
         <h3>My Skill Set</h3>
         <div class="line"></div>
@@ -198,6 +203,61 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+    <!-- My Skills - with bootstrap -->
+    <section class="mySkills ">
+      <div class="container">
+        <h3>My Skills</h3>
+        <div class="line"></div>
+        <div class="skill">
+          <h6 class="mt-3 mb-0">SASS</h6>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" aria-valuenow="10"
+              aria-valuemin="0" aria-valuemax="100" style="width:10%"></div>
+          </div>
+          <h6 class="mt-3 mb-0">Javascript</h6>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10"
+              aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+          </div>
+          <h6 class="mt-3 mb-0">React / React Hooks</h6>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10"
+              aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+          </div>
+          <h6 class="mt-3 mb-0">Context API / Redux</h6>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10"
+              aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+          </div>
+          <h6 class="mt-3 mb-0">Nodejs / Express</h6>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10"
+              aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+          </div>
+          <h6 class="mt-3 mb-0">MongoDB</h6>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10"
+              aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+          </div>
+          <h6 class="mt-3 mb-0">MySQL</h6>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10"
+              aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+          </div>
+          <h6 class="mt-3 mb-0">Python</h6>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10"
+              aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+          </div>
+          <h6 class="mt-3 mb-0">C# / ASP.NET</h6>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10"
+              aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- contact -->
     <section class="contact-header">
@@ -206,28 +266,28 @@
 
         <div class="line bg-white"></div>
         <div class="form">
-          <h3 id="email_received" class="email_received">
-            Thanks for your email. It has been received and I shall contact you
-            shortly.
-          </h3>
+          <button id="email_received" class="email_received btn btn-block btn-success btn-lg">
+            Thank you. 
+          </button>
 
-          <label>Name</label>
-          <input id="name" type="text" />
+          <label>Your Name</label>
+          <input id="name" type="text" class="form-control"/>
           <div class="warning" id="warning_id">Please fill up your name.</div>
 
-          <label>Email</label>
-          <input id="email" type="email" />
+          <label>Email Address</label>
+          <input id="email" type="email" class="form-control" />
           <div class="warning" id="warning_email">
             Please fill up your email.
           </div>
 
-          <label>Message</label>
-          <textarea id="message" name="message"></textarea>
+          <label>Content</label>
+          <textarea id="message" name="message" class="form-control"></textarea>
           <div class="warning" id="warning_message">
             Please fill up your message.
           </div>
 
-          <button id="formbtn" class="formbtn">Send</button>
+          <!-- <button id="formbtn" class="formbtn btn btn-primary">Send</button> -->
+          <button id="formbtn" class="btn btn-secondary btn-block mt-3 btn-lg">Send</button>
         </div>
       </div>
     </section>
@@ -241,10 +301,19 @@
     <!-- footer -->
     <footer class="footer" id="footer">
       <div class="container">
-        <p>© 2020 Dom Quy Dung Le. All rights reserved.</p>
+        <p>© 2021 Dom Quy Dung Le. All rights reserved.</p>
       </div>
     </footer>
+    
     <!-- done, now is scripts of JS -->
     <script type="module" src="js/main.js"></script>
+    
+    <!-- Bootstraps 4 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>

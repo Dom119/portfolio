@@ -1,19 +1,19 @@
 const skillSet = () => {
-  const filler = document.querySelectorAll(".measurement-filler");
+  const filler = document.querySelectorAll(".progress-bar");
   const values = [
     "70%",
     "85%",
     "90%",
     "75%",
-    "70%",
     "80%",
     "95%",
-    "90%",
-    "60%",
-    "70%",
+    "80%",
+    "45%",
+    "40%"
   ];
+  
   if (window.scrollY < 1500) {
-    filler.forEach((element) => (element.style.width = "0%"));
+    filler.forEach((element) => (element.style.width = "10%"));
   } else {
     for (let i = 0; i < values.length; i++) {
       filler[i].style.width = values[i];
