@@ -17,13 +17,13 @@ const createReactStatics2 = () => {
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="../images/reactStatic/githubFinder1.png" alt="First slide">
+        <img class="d-block w-100" src="images/reactStatic/githubFinder1.png" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="../images/reactStatic/githubFinder2.png" alt="Second slide">
+        <img class="d-block w-100" src="images/reactStatic/githubFinder2.png" alt="Second slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="../images/reactStatic/githubFinder3.png" alt="Third slide">
+        <img class="d-block w-100" src="images/reactStatic/githubFinder3.png" alt="Third slide">
       </div>
     </div>
     <a class="carousel-control-prev " href="#carouselExampleIndicators2" role="button" data-slide="prev" style="filter: invert(100%)">
@@ -79,13 +79,13 @@ const createReactStatics2 = () => {
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="../images/reactStatic/caro1.png" alt="First slide">
+        <img class="d-block w-100" src="images/reactStatic/caro1.png" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="../images/reactStatic/caro2.png" alt="Second slide">
+        <img class="d-block w-100" src="images/reactStatic/caro2.png" alt="Second slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="../images/reactStatic/caro3.png" alt="Third slide">
+        <img class="d-block w-100" src="images/reactStatic/caro3.png" alt="Third slide">
       </div>
     </div>
     <a class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev"
@@ -146,16 +146,16 @@ const createReactStatics2 = () => {
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="../images/reactStatic/todoList1.png" alt="First slide">
+        <img class="d-block w-100" src="images/reactStatic/todoList1.png" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="../images/reactStatic/todoList2.png" alt="Second slide">
+        <img class="d-block w-100" src="images/reactStatic/todoList2.png" alt="Second slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="../images/reactStatic/todoList3.png" alt="Third slide">
+        <img class="d-block w-100" src="images/reactStatic/todoList3.png" alt="Third slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="../images/reactStatic/todoList4.png" alt="4th slide">
+        <img class="d-block w-100" src="images/reactStatic/todoList4.png" alt="4th slide">
       </div>
     </div>
     <a class="carousel-control-prev " href="#carouselExampleIndicators3" role="button" data-slide="prev"
