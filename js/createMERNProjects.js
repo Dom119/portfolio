@@ -81,7 +81,7 @@ const createMERNProjects = () => {
   <!-- ------------------------------Project 2--------------------------------- -->
   
     <div class="MERN-element">
-  <button type="button" class="btn btn-primary w-100 btn-lg">Mini Social Network</button>
+  <button type="button" class="btn btn-primary w-100 btn-lg">Mini Social Network <span class="badge badge-danger">completing 90%</span></button>
   <!-- carousel -->
   <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators" style="filter: invert(100%)">
